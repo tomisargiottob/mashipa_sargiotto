@@ -8,50 +8,38 @@
 body{
 	background-color: white;
 }
+header{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-areas: "logo navbar";
+}
 nav{
-	width: 100%;
-	display: flex;
-	justify-self: stretch;
-	align-items: center;
+	width: 100% !important;
 	background-image:linear-gradient(to bottom,#373a52,black) ;
+	grid-area: navbar;
 }
-#logo{
-	width: 30%;
+#logoImagen{
+	background-image:linear-gradient(to bottom,#373a52,black) ;
+	grid-area: logo;
 }
-#logo a img{
+#logomenor{
 	width: 100%;
 }
-nav ul{
-	display: flex;
-	justify-content:space-evenly;
-	align-items: center;
-	width: 100vw;
-}
-nav li{
-	text-align: center;
-	list-style-type: none;
 
+.nav-link{
+	color:white !important;
+	justify-content: space-evenly;
 }
 
-nav li a:hover{
-	color: orange;
-	font-size:2vm;
+.nav-link:hover{
+	color: orange !important;
 }
 nav li a{
+	text-align: center;
 	text-decoration: none;
-	color:black;
 	font-size: 2vw;
 	font-family: 'Carter One', cursive;
 	color:white;
-}
-nav form{
-	width: 16%;
-	display: inline-block;
-}
-#barraBuscar{
-	display: inline-block;
-	width: 80%;
-	font-size: 1.5vw;
 }
 
 h1{
@@ -65,10 +53,10 @@ h1{
 .fotoCarrusel{
 	display: flex;
 	width: 100%;
-	height: 40vw;
+	height: 45vw;
 	object-fit: cover;
 	margin-bottom: 30px;
-   object-position: 0% 20%;
+   object-position: 0% 40%;
 }
  
 
@@ -95,7 +83,7 @@ h1{
 	
 	text-align: center;
 	width: 80%;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	grid-area: texto;
 
 }
@@ -145,17 +133,22 @@ form input{
 
 
 /* GALERIA */
-#galeriaPrincipal{
+.galeriaPrincipal{
 	display: grid;
-	grid-template-columns: 30% 30% 30%;
-	grid-template-rows:repeat(auto,6);
-	grid-template-areas: "imagen1 imagen1 imagen2"
-								"imagen1 imagen1 imagen3"
-								"imagen4 imagen5 imagen5"
-								"imagen7 imagen5 imagen5"
-								"imagen8 imagen8 imagen9"
-								"imagen8 imagen8 imagen10" ;
-	justify-content: space-evenly;
+	text-align: right;
+	width: 70%;
+	margin:20px auto;
+	column-gap: 10px;
+	row-gap: 10px;
+	grid-template-columns: 24% 24% 24% 24%;
+	grid-template-rows:auto auto auto auto auto;
+	grid-template-areas: "imagen1 imagen1 imagen2 imagen2"
+								"imagen1 imagen1 imagen2 imagen2"
+								"imagen3 imagen4 imagen5 imagen6"
+								"imagen7 imagen7 imagen8 imagen8"
+								"imagen7 imagen7 imagen8 imagen8";
+								
+
 	align-items: center;
 }
 
@@ -164,15 +157,17 @@ form input{
 }
 
 #imagenSecundaria{
-	padding-top: 15px;
-	grid-area: imagen5;
+	grid-area: imagen2;
 }
 #imagenTerciaria{
-	padding-top: 15px;
-	grid-area: imagen8;
-	margin-bottom: 25px;
+	grid-area: imagen7;
 }
-
+#imagenCuarta{
+	grid-area: imagen8;
+}
+.imagenGaleria{
+	width: 100%;
+}
 .imagenGaleria img{
 	width: 100%;
 }
@@ -342,7 +337,7 @@ footer{
 	background-image:linear-gradient(to bottom,#373a52,black) ;
 	padding: 20px;
 	color: white;
-	height: 250px;
+
 }
 
 .piePagina{
