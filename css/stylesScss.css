@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+#topBar {
+  height: 25px;
+  background-color: black; }
+
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "logo navbar"; }
+  header #logoImagen {
+    background-color: #f8f9fa;
+    grid-area: logo; }
+  header #logomenor {
+    width: 100%; }
+  header nav {
+    width: 100% !important;
+    background-color: #f8f9fa !important;
+    grid-area: navbar; }
+    header nav .nav-link {
+      color: black !important;
+      justify-content: space-evenly; }
+    header nav .nav-link:hover {
+      color: orange !important; }
+    header nav li a {
+      text-align: center;
+      text-decoration: none;
+      font-size: 2vw;
+      font-family: 'Carter One', cursive;
+      color: #f8f9fa; }
+
+body {
+  background-color: #faecd2; }
+
+.fotoCarrusel {
+  display: flex;
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+  margin-bottom: 30px;
+  object-position: 0% 35%; }
+
+h1 {
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+  text-align: center; }
+
+#seccionArticulos {
+  margin-bottom: 70px; }
+  #seccionArticulos #englobaArticulos {
+    display: flex;
+    justify-content: space-evenly; }
+    #seccionArticulos #englobaArticulos .articuloDestacado {
+      width: 25%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-areas: "imagen" "texto";
+      align-items: center;
+      justify-items: center; }
+      #seccionArticulos #englobaArticulos .articuloDestacado img {
+        grid-area: imagen;
+        width: 80%;
+        object-fit: contain; }
+      #seccionArticulos #englobaArticulos .articuloDestacado article {
+        text-align: center;
+        width: 80%;
+        font-size: 1vw;
+        grid-area: texto; }
+
+/* CONTACTO y Newsletter */
+form {
+  margin: 0 auto;
+  font-size: 1vw;
+  margin-bottom: 30px; }
+  form span {
+    font-size: 1vw; }
+  form input,
+  form label,
+  form select,
+  form textarea {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    display: block; }
+  form #contactAsunto {
+    height: 40px;
+    font-size: 1vw; }
+  form .obligatorio {
+    font-size: 1vw;
+    color: red; }
+  form input[type='checkbox'],
+  form input[type='checkbox'] {
+    display: inline;
+    width: 1vw;
+    height: 1vw;
+    background-color: #f8f9fa;
+    border-radius: 5px; }
+  form input[type='reset'],
+  form input[type='submit'] {
+    margin: 0 auto;
+    width: 20%;
+    background-color: #39DBC0;
+    color: white;
+    border: white 1px solid;
+    border-radius: 10px;
+    cursor: pointer; }
+  form #aceptarPoliticas {
+    width: 35%;
+    margin: 0 auto; }
+
+#contactForm {
+  width: 50%; }
+
+#secNewsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa; }
+  #secNewsletter #newsletter {
+    width: 50%;
+    text-align: center;
+    font-size: 1vw; }
+    #secNewsletter #newsletter h3 {
+      font-size: 3vw; }
+    #secNewsletter #newsletter p {
+      font-size: 1vw; }
+    #secNewsletter #newsletter #newsletterEmail:focus {
+      width: 60%; }
+
+.galeriaPrincipal {
+  display: grid;
+  text-align: right;
+  width: 70%;
+  margin: 20px auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "imagen1 imagen1 imagen2 imagen2" "imagen1 imagen1 imagen2 imagen2" "imagen3 imagen4 imagen5 imagen6" "imagen7 imagen7 imagen8 imagen8" "imagen7 imagen7 imagen8 imagen8";
+  align-items: center; }
+  .galeriaPrincipal #imagenPrincipal {
+    grid-area: imagen1; }
+  .galeriaPrincipal #imagenSecundaria {
+    grid-area: imagen2; }
+  .galeriaPrincipal #imagenTerciaria {
+    grid-area: imagen7; }
+  .galeriaPrincipal #imagenCuarta {
+    grid-area: imagen8; }
+  .galeriaPrincipal .imagenGaleria {
+    width: 100%; }
+    .galeriaPrincipal .imagenGaleria img {
+      width: 100%; }
+
+/* NOSOTROS */
+#owners {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "owner1 texto1 " "texto2 owner2";
+  justify-content: space-evenly;
+  align-items: center; }
+  #owners div h3 {
+    padding: 10px;
+    font-size: 2vw; }
+  #owners div p {
+    padding: 10px;
+    font-size: 1.5vw; }
+
+#ownerUno {
+  width: 100%;
+  grid-area: owner1; }
+  #ownerUno img {
+    width: 100%; }
+
+#descripcionOwnerUno {
+  grid-area: texto1; }
+
+#ownerDos {
+  width: 100%;
+  grid-area: owner2; }
+  #ownerDos img {
+    width: 100%; }
+
+#descripcionOwnerUno {
+  grid-area: texto2; }
+
+#colaboradores {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "colaboradorUno 			imagenColaboradorDos 	colaboradorTres" "imagenColaboradorUno 	colaboradorDos 			imagenColaboradorTres";
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px; }
+  #colaboradores div img {
+    width: 100%;
+    transition: all 2s; }
+  #colaboradores div img:hover {
+    transform: scale(2, 2); }
+  #colaboradores div p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1vw; }
+  #colaboradores div h3 {
+    font-size: 2vw; }
+
+#descripcionColaboradorUno {
+  grid-area: colaboradorUno; }
+
+#descripcionColaboradorDos {
+  grid-area: colaboradorDos; }
+
+#descripcionColaboradorTres {
+  grid-area: colaboradorTres; }
+
+#colaboradorUno {
+  grid-area: imagenColaboradorUno; }
+
+#colaboradorDos {
+  grid-area: imagenColaboradorDos; }
+
+#colaboradorTres {
+  grid-area: imagenColaboradorTres; }
+
+footer {
+  font-weight: 100;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: black; }
+  footer ul {
+    position: relative;
+    top: 0px; }
+    footer ul li {
+      list-style-type: none;
+      font-size: 1vw;
+      margin: 10px; }
+    footer ul li:hover {
+      color: #f5772e; }
+  footer div p {
+    font-size: 2.5vw;
+    margin-bottom: 20px; }
+  footer div img {
+    grid-area: imagen;
+    width: 100%; }
+  footer div span {
+    grid-area: texto;
+    font-size: 1vw; }
+  footer div span:hover {
+    color: #f5772e; }
+  footer .piePagina {
+    width: 33%;
+    text-align: center; }
+  footer #mapa {
+    width: 100%;
+    height: 100%;
+    border: 0px; }
+  footer #redes {
+    width: 50%;
+    margin: 0 auto; }
+  footer .red-social {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    row-gap: 0px;
+    grid-template-areas: "imagen texto";
+    align-items: center; }
+
+@media only screen and (max-width: 500px) {
+  #englobaArticulos {
+    flex-direction: column;
+    justify-content: center; }
+  .articuloDestacado {
+    width: 50%;
+    height: 40vw;
+    margin: 10px auto 0px auto; }
+  .hide-mobile {
+    display: none; }
+  footer {
+    height: 100px; }
+  #owners {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    margin: 5px auto 5px auto; } }

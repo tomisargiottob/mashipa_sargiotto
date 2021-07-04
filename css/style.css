@@ -8,45 +8,7 @@
 body{
 	background-color: white;
 }
-header{
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-areas: "logo navbar";
-}
-nav{
-	width: 100% !important;
-	background-image:linear-gradient(to bottom,#373a52,black) ;
-	grid-area: navbar;
-}
-#logoImagen{
-	background-image:linear-gradient(to bottom,#373a52,black) ;
-	grid-area: logo;
-}
-#logomenor{
-	width: 100%;
-}
 
-.nav-link{
-	color:white !important;
-	justify-content: space-evenly;
-}
-
-.nav-link:hover{
-	color: orange !important;
-}
-nav li a{
-	text-align: center;
-	text-decoration: none;
-	font-size: 2vw;
-	font-family: 'Carter One', cursive;
-	color:white;
-}
-
-h1{
-	font-size: 3.5vw;
-	margin-bottom: 20px;
-	text-align: center;	
-}
 
 /*Carrusel*/
 
@@ -89,7 +51,6 @@ h1{
 }
 .imagenArticulosDestacados{
 	width:80%;
-
 	object-fit: contain;
 	grid-area: imagen;
 }
@@ -101,8 +62,6 @@ h1{
 	justify-content: center;
 	padding:20px;
 	background-color: rgb(135, 145, 156);
-	
-
 }
 
 #newsletter{
