@@ -8,16 +8,29 @@
 }
 #topBar{
 	height: 25px;
+	display: flex;
+	// align-items: flex-end;
+	justify-content: flex-end;
 	background-color: black;
+	.miniRed{
+		// text-align: right;
+		height: 100%;
+		a{
+			img{
+				height: 80%;
+			}
+		}
+	}
 }
 header{
 	display: grid;
 	grid-template-columns: 20% 80%;
 	grid-template-areas: "logo navbar";
-
+	background-color: $backgroundMain;
+	
 	#logoImagen{
-		background-color: $backgroundMain;
 		grid-area: logo;
+		
 	}
 	#logomenor{
 		width: 100%;
@@ -27,21 +40,27 @@ header{
 		width: 100% !important;
 		background-color: $backgroundMain !important;
 		grid-area: navbar;
-
+		.container-fluid{
+			justify-content: flex-end !important;
+		}
 		.nav-link{
 			color:black !important;
-			justify-content: space-evenly;
+			
 		}
 		.nav-link:hover{
 			color: orange !important;
 		}
 		li{
+			justify-content: flex-end !important;
+			width: 100%;
+			padding-right: 50px;
 			a{
 				text-align: center;
 				text-decoration: none;
 				font-size: 2vw;
-				font-family: 'Carter One', cursive;
+				font-family: 'Alfa Slab One', cursive;
 				color: $backgroundMain;
+				
 			}
 		}
 	}
@@ -49,6 +68,19 @@ header{
 body{
 	background-color: $backgroundBody;
 }
+#imagenHome{
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/carrusel/sociales_grupo_01.jfif);
+	background-size: auto;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 0% 70%;
+	}
+}
+
 .fotoCarrusel{
 	display: flex;
 	width: 100%;
@@ -69,7 +101,11 @@ h1{
 	#englobaArticulos{
 		display:flex;
 		justify-content:space-evenly;
+		div{
+			margin: 1px solid black;
+		}
 		.articuloDestacado{
+			padding:10px;
 			width: 25%;
 			display: grid;
 			grid-template-columns: 100%;
@@ -93,9 +129,9 @@ h1{
 	}
 }
 /* CONTACTO y Newsletter */
-form{
+#contactForm{
 	margin:0 auto;
-	font-size: $textoMedio;
+	font-size: $textoGrande;
 	margin-bottom: 30px;
 	span{
 		font-size: $textoChico;
@@ -112,13 +148,12 @@ form{
 	}
 	#contactAsunto{
 		height: 40px;
-		font-size: $textoMedio;
+		font-size: $textoGrande;
 	}
 	.obligatorio{
 		font-size: 1vw;
 		color: red;
 	}
-	input[type='checkbox'],
 	input[type='checkbox'] {
 		display: inline;
 		width:1vw;
@@ -144,6 +179,35 @@ form{
 }
 #contactForm{
 	width: 50%;
+}
+h3{
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+#formularioHome{
+	display: grid;
+	grid-template-columns: 40% 40%;
+	justify-content: space-evenly;
+	div{
+		p{
+			font-size: $textoGrande;
+		}
+		ul{
+			list-style: none;
+		}
+		ul li:before {
+			content: '✓ ';
+		 }
+	}
+	form{
+		@extend #contactForm ;
+		width:100%;
+		input[type='submit']{
+			width: auto;
+			margin-top: 5px;
+			padding:0 5px 0 5px;
+		}
+	}
 }
 #secNewsletter{
 	display: flex;
@@ -319,8 +383,6 @@ footer{
 	font-weight: 100;
 	display: grid;
 	grid-template-columns: 20% 20% 20% 40%;
-	// justify-content: space-evenly;
-	// background-image:linear-gradient(to bottom,#373a52,black) ;
 	background-color: $backgroundMain;
 	padding: 20px;
 	color: $colorTexto;
@@ -370,19 +432,47 @@ footer{
 		}
 	}
 
-	// #mapa{
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	border: 0px;
-	// }
-
 	#redes{
 		width: 50%;
 		margin: 0 auto;
 	}
 }
+@media only screen and (max-width:900px) {
+	header{
+		grid-template-columns: 30% 70%;
+		.container-fluid{
+			justify-content: flex-end;
+		}
+	}
+	#englobaArticulos{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.articuloDestacado{
+		width: 50%;
+		height: 40vw;
+		margin: 10px auto 0px auto;
+	}
+	.hide-mobile{
+		display: none;
+	}
+	footer{
+		height: auto;
+	}
+	#owners{
+		display: flex;
+		flex-direction: column;
+		width: 60%;
+		text-align: center;
+		margin:5px auto 5px auto;
+	}
+}
 
 @media only screen and (max-width:500px) {
+	header{
+		grid-template-columns: 40% 60%;
+		align-items: center;
+	}
 	#englobaArticulos{
 		flex-direction: column;
 		justify-content: center;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -6,14 +7,20 @@
 
 #topBar {
   height: 25px;
+  display: flex;
+  justify-content: flex-end;
   background-color: black; }
+  #topBar .miniRed {
+    height: 100%; }
+    #topBar .miniRed a img {
+      height: 80%; }
 
 header {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-areas: "logo navbar"; }
+  grid-template-areas: "logo navbar";
+  background-color: #f8f9fa; }
   header #logoImagen {
-    background-color: #f8f9fa;
     grid-area: logo; }
   header #logomenor {
     width: 100%; }
@@ -21,20 +28,36 @@ header {
     width: 100% !important;
     background-color: #f8f9fa !important;
     grid-area: navbar; }
+    header nav .container-fluid {
+      justify-content: flex-end !important; }
     header nav .nav-link {
-      color: black !important;
-      justify-content: space-evenly; }
+      color: black !important; }
     header nav .nav-link:hover {
       color: orange !important; }
-    header nav li a {
-      text-align: center;
-      text-decoration: none;
-      font-size: 2vw;
-      font-family: 'Carter One', cursive;
-      color: #f8f9fa; }
+    header nav li {
+      justify-content: flex-end !important;
+      width: 100%;
+      padding-right: 50px; }
+      header nav li a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 2vw;
+        font-family: 'Alfa Slab One', cursive;
+        color: #f8f9fa; }
 
 body {
   background-color: #faecd2; }
+
+#imagenHome {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/carrusel/sociales_grupo_01.jfif);
+  background-size: auto; }
+  #imagenHome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 70%; }
 
 .fotoCarrusel {
   display: flex;
@@ -54,7 +77,10 @@ h1 {
   #seccionArticulos #englobaArticulos {
     display: flex;
     justify-content: space-evenly; }
+    #seccionArticulos #englobaArticulos div {
+      margin: 1px solid black; }
     #seccionArticulos #englobaArticulos .articuloDestacado {
+      padding: 10px;
       width: 25%;
       display: grid;
       grid-template-columns: 100%;
@@ -72,35 +98,38 @@ h1 {
         grid-area: texto; }
 
 /* CONTACTO y Newsletter */
-form {
+#contactForm, #formularioHome form {
   margin: 0 auto;
-  font-size: 1vw;
+  font-size: 1.5vw;
   margin-bottom: 30px; }
-  form span {
-    font-size: 0.5vw; }
-  form input,
-  form label,
-  form select,
-  form textarea {
+  #contactForm span, #formularioHome form span {
+    font-size: 0.75vw; }
+  #contactForm input, #formularioHome form input,
+  #contactForm label,
+  #formularioHome form label,
+  #contactForm select,
+  #formularioHome form select,
+  #contactForm textarea,
+  #formularioHome form textarea {
     text-align: center;
     width: 70%;
     margin: 0 auto;
     display: block; }
-  form #contactAsunto {
+  #contactForm #contactAsunto, #formularioHome form #contactAsunto {
     height: 40px;
-    font-size: 1vw; }
-  form .obligatorio {
+    font-size: 1.5vw; }
+  #contactForm .obligatorio, #formularioHome form .obligatorio {
     font-size: 1vw;
     color: red; }
-  form input[type='checkbox'],
-  form input[type='checkbox'] {
+  #contactForm input[type='checkbox'], #formularioHome form input[type='checkbox'] {
     display: inline;
     width: 1vw;
     height: 1vw;
     background-color: #f8f9fa;
     border-radius: 5px; }
-  form input[type='reset'],
-  form input[type='submit'] {
+  #contactForm input[type='reset'], #formularioHome form input[type='reset'],
+  #contactForm input[type='submit'],
+  #formularioHome form input[type='submit'] {
     margin: 0 auto;
     width: 20%;
     background-color: #39DBC0;
@@ -108,12 +137,33 @@ form {
     border: white 1px solid;
     border-radius: 10px;
     cursor: pointer; }
-  form #aceptarPoliticas {
+  #contactForm #aceptarPoliticas, #formularioHome form #aceptarPoliticas {
     width: 35%;
     margin: 5px auto; }
 
-#contactForm {
+#contactForm, #formularioHome form {
   width: 50%; }
+
+h3 {
+  text-align: center;
+  margin: 10px 0 10px 0; }
+
+#formularioHome {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly; }
+  #formularioHome div p {
+    font-size: 1.5vw; }
+  #formularioHome div ul {
+    list-style: none; }
+  #formularioHome div ul li:before {
+    content: '✓ '; }
+  #formularioHome form {
+    width: 100%; }
+    #formularioHome form input[type='submit'] {
+      width: auto;
+      margin-top: 5px;
+      padding: 0 5px 0 5px; }
 
 #secNewsletter {
   display: flex;
@@ -284,7 +334,33 @@ footer {
     width: 50%;
     margin: 0 auto; }
 
+@media only screen and (max-width: 900px) {
+  header {
+    grid-template-columns: 30% 70%; }
+    header .container-fluid {
+      justify-content: flex-end; }
+  #englobaArticulos {
+    flex-direction: column;
+    justify-content: center; }
+  .articuloDestacado {
+    width: 50%;
+    height: 40vw;
+    margin: 10px auto 0px auto; }
+  .hide-mobile {
+    display: none; }
+  footer {
+    height: auto; }
+  #owners {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    margin: 5px auto 5px auto; } }
+
 @media only screen and (max-width: 500px) {
+  header {
+    grid-template-columns: 40% 60%;
+    align-items: center; }
   #englobaArticulos {
     flex-direction: column;
     justify-content: center; }
