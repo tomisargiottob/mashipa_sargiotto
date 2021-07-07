@@ -49,13 +49,15 @@ body {
   background-color: #faecd2; }
 
 #imagenHome {
+  text-align: center;
+  margin: 0;
   width: 100%;
   height: 45vw;
-  background-image: url(../img/carrusel/home3.jfif);
+  background-image: url(../img/carrusel/home5.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  text-align: center;
-  color: white; }
+  color: white;
+  text-shadow: 1px 1px black; }
   #imagenHome h1 {
     height: 60%;
     padding-top: 20%;
@@ -92,12 +94,12 @@ h1 {
   text-align: center; }
 
 #llamadoAccion {
-  margin-bottom: 50px; }
+  padding-bottom: 50px; }
   #llamadoAccion h3 {
     font-size: 2.5vw;
     text-align: center;
-    width: 40%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 40%; }
   #llamadoAccion form {
     margin: 0 auto; }
   #llamadoAccion #pasosForm {
@@ -132,12 +134,14 @@ h1 {
         object-fit: contain; }
       #seccionArticulos #englobaArticulos .articuloDestacado article {
         text-align: center;
+        margin: 0;
         width: 80%;
         font-size: 1vw;
         grid-area: texto; }
 
 /* CONTACTO y Newsletter */
 #contactForm, #imagenHome form, #llamadoAccion form, #formularioHome form, #secNewsletter {
+  width: 50%;
   margin: 0 auto;
   font-size: 1.5vw;
   margin-bottom: 30px; }
@@ -160,8 +164,8 @@ h1 {
   #formularioHome form textarea,
   #secNewsletter textarea {
     text-align: center;
-    width: 70%;
     margin: 0 auto;
+    width: 70%;
     display: block; }
   #contactForm #contactAsunto, #imagenHome form #contactAsunto, #llamadoAccion form #contactAsunto, #formularioHome form #contactAsunto, #secNewsletter #contactAsunto {
     height: 40px;
@@ -235,7 +239,6 @@ h2 {
 
 .galeriaPrincipal {
   display: grid;
-  text-align: right;
   width: 70%;
   margin: 20px auto;
   column-gap: 10px;
@@ -296,9 +299,9 @@ h2 {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto;
   grid-template-areas: "colaboradorUno 			imagenColaboradorDos 	colaboradorTres" "imagenColaboradorUno 	colaboradorDos 			imagenColaboradorTres";
-  width: 75%;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
+  width: 75%;
   margin-bottom: 15px; }
   #colaboradores div img {
     width: 100%;
@@ -331,15 +334,15 @@ h2 {
   grid-area: imagenColaboradorTres; }
 
 #precios {
+  text-align: center;
+  margin: 0 auto;
   width: 50%;
-  display: block;
-  margin: 0 auto; }
+  display: block; }
   #precios h2 {
     color: #f5772e; }
   #precios table {
     border: 1px solid black;
     width: 100%;
-    text-align: center;
     margin-bottom: 30px; }
     #precios table td,
     #precios table th {
@@ -406,9 +409,9 @@ footer {
   #owners {
     display: flex;
     flex-direction: column;
-    width: 60%;
     text-align: center;
-    margin: 5px auto 5px auto; } }
+    margin: 5px auto 5px auto;
+    width: 60%; } }
 
 @media only screen and (max-width: 500px) {
   header {
@@ -428,6 +431,6 @@ footer {
   #owners {
     display: flex;
     flex-direction: column;
-    width: 60%;
     text-align: center;
-    margin: 5px auto 5px auto; } }
+    margin: 5px auto 5px auto;
+    width: 60%; } }

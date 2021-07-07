@@ -1,4 +1,9 @@
 @import "variables.scss";
+@mixin centrar($posicion,$ancho,$margin) {
+	text-align: $posicion;
+	margin:$margin;
+	width: $ancho;
+}
 
 *{
 	margin:0px;
@@ -69,13 +74,13 @@ body{
 	background-color: $backgroundBody;
 }
 #imagenHome{
-	width: 100%;
+	@include centrar(center,100% ,0 );
 	height: 45vw;
-	background-image: url(../img/carrusel/home3.jfif);
+	background-image: url(../img/carrusel/home5.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-	text-align: center;
 	color:white;
+	text-shadow: 1px 1px black;
 	h1{
 		height: 60%;
 		padding-top: 20%;
@@ -121,12 +126,10 @@ h1{
 	text-align: center;
 }
 #llamadoAccion{
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 	h3{
 		font-size: $tituloChicoMedio;
-		text-align: center;
-		width: 40%;
-		margin:0 auto;
+		@include centrar(center,40% ,0 auto )
 	}
 	form{
 		margin:0 auto;
@@ -171,8 +174,7 @@ h1{
 				object-fit: contain;
 			}
 			article{
-				text-align: center;
-				width: 80%;
+				@include centrar(center,80% ,0);
 				font-size: 1vw;
 				grid-area: texto;
 
@@ -182,6 +184,7 @@ h1{
 }
 /* CONTACTO y Newsletter */
 #contactForm{
+	width: 50%;
 	margin:0 auto;
 	font-size: $textoGrande;
 	margin-bottom: 30px;
@@ -193,9 +196,7 @@ h1{
 	label,
 	select,
 	textarea{
-		text-align: center;
-		width: 70%;
-		margin:0 auto;
+		@include centrar(center,70% ,0 auto );
 		display: block;
 	}
 	#contactAsunto{
@@ -286,7 +287,6 @@ h2{
 // Galeria
 .galeriaPrincipal{
 	display: grid;
-	text-align: right;
 	width: 70%;
 	margin:20px auto;
 	column-gap: 10px;
@@ -298,8 +298,6 @@ h2{
 								"imagen3 imagen4 imagen5 imagen6"
 								"imagen7 imagen7 imagen8 imagen8"
 								"imagen7 imagen7 imagen8 imagen8";
-
-
 	align-items: center;
 	#imagenPrincipal{
 		grid-area: imagen1;
@@ -370,9 +368,7 @@ h2{
 	grid-template-rows: auto auto;
 	grid-template-areas: "colaboradorUno 			imagenColaboradorDos 	colaboradorTres"
 								"imagenColaboradorUno 	colaboradorDos 			imagenColaboradorTres";
-	width: 75%;
-	margin: 0 auto;
-	text-align: center;
+	@include centrar(center,75%,0 auto);
 	margin-bottom: 15px;
 	div{
 		img{
@@ -414,16 +410,14 @@ h2{
 
 //Precios
 #precios{
-	width: 50%;
+	@include centrar(center,50% ,0 auto);
 	display: block;
-	margin:0 auto;
 	h2{
 		color: $colorNaranja;
 	}
 	table{
 		border: 1px solid black;
 		width: 100%;
-		text-align: center;
 		margin-bottom: 30px;
 		td,
 		th{
@@ -441,7 +435,6 @@ footer{
 	padding: 20px;
 	color: $colorTexto;
 	.piePagina{
-		// width: 33%;
 		text-align: center;
 		ul{
 			position: relative;
@@ -459,7 +452,6 @@ footer{
 		}
 	}
 	div{
-
 		p{
 			text-align: center;
 			font-size: $tituloChico;
@@ -516,9 +508,7 @@ footer{
 	#owners{
 		display: flex;
 		flex-direction: column;
-		width: 60%;
-		text-align: center;
-		margin:5px auto 5px auto;
+		@include centrar(center,60% ,5px auto 5px auto );
 	}
 }
 
@@ -545,8 +535,7 @@ footer{
 	#owners{
 		display: flex;
 		flex-direction: column;
-		width: 60%;
-		text-align: center;
-		margin:5px auto 5px auto;
+		@include centrar(center,60% ,5px auto 5px auto );
 	}
 }
+
