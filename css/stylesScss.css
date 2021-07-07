@@ -50,14 +50,34 @@ body {
 
 #imagenHome {
   width: 100%;
-  height: 600px;
-  background-image: url(../img/carrusel/sociales_grupo_01.jfif);
-  background-size: auto; }
-  #imagenHome img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0% 70%; }
+  height: 45vw;
+  background-image: url(../img/carrusel/home3.jfif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white; }
+  #imagenHome h1 {
+    height: 60%;
+    padding-top: 20%;
+    font-size: 4.5vw; }
+  #imagenHome p {
+    font-size: 2vw;
+    width: 50%;
+    margin: 0 auto; }
+
+#seccionEstadistica {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #0000000F;
+  opacity: 0.5; }
+  #seccionEstadistica .cantidadEstadistica {
+    font-size: 4.5vw;
+    margin-bottom: 0px !important; }
+  #seccionEstadistica .estadisticas {
+    font-size: 2vw;
+    margin-bottom: 0px !important;
+    color: black; }
 
 .fotoCarrusel {
   display: flex;
@@ -69,8 +89,27 @@ body {
 
 h1 {
   font-size: 3.5vw;
-  margin-bottom: 20px;
   text-align: center; }
+
+#llamadoAccion {
+  margin-bottom: 50px; }
+  #llamadoAccion h3 {
+    font-size: 2.5vw;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto; }
+  #llamadoAccion form {
+    margin: 0 auto; }
+  #llamadoAccion #pasosForm {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; }
+    #llamadoAccion #pasosForm div {
+      width: 25%; }
+      #llamadoAccion #pasosForm div .enumeracion {
+        font-size: 4.5vw; }
+      #llamadoAccion #pasosForm div .accion {
+        font-size: 2vw; }
 
 #seccionArticulos {
   margin-bottom: 70px; }
@@ -98,38 +137,50 @@ h1 {
         grid-area: texto; }
 
 /* CONTACTO y Newsletter */
-#contactForm, #formularioHome form {
+#contactForm, #imagenHome form, #llamadoAccion form, #formularioHome form, #secNewsletter {
   margin: 0 auto;
   font-size: 1.5vw;
   margin-bottom: 30px; }
-  #contactForm span, #formularioHome form span {
+  #contactForm span, #imagenHome form span, #llamadoAccion form span, #formularioHome form span, #secNewsletter span {
     font-size: 0.75vw; }
-  #contactForm input, #formularioHome form input,
+  #contactForm input, #imagenHome form input, #llamadoAccion form input, #formularioHome form input, #secNewsletter input,
   #contactForm label,
+  #imagenHome form label,
+  #llamadoAccion form label,
   #formularioHome form label,
+  #secNewsletter label,
   #contactForm select,
+  #imagenHome form select,
+  #llamadoAccion form select,
   #formularioHome form select,
+  #secNewsletter select,
   #contactForm textarea,
-  #formularioHome form textarea {
+  #imagenHome form textarea,
+  #llamadoAccion form textarea,
+  #formularioHome form textarea,
+  #secNewsletter textarea {
     text-align: center;
     width: 70%;
     margin: 0 auto;
     display: block; }
-  #contactForm #contactAsunto, #formularioHome form #contactAsunto {
+  #contactForm #contactAsunto, #imagenHome form #contactAsunto, #llamadoAccion form #contactAsunto, #formularioHome form #contactAsunto, #secNewsletter #contactAsunto {
     height: 40px;
     font-size: 1.5vw; }
-  #contactForm .obligatorio, #formularioHome form .obligatorio {
+  #contactForm .obligatorio, #imagenHome form .obligatorio, #llamadoAccion form .obligatorio, #formularioHome form .obligatorio, #secNewsletter .obligatorio {
     font-size: 1vw;
     color: red; }
-  #contactForm input[type='checkbox'], #formularioHome form input[type='checkbox'] {
+  #contactForm input[type='checkbox'], #imagenHome form input[type='checkbox'], #llamadoAccion form input[type='checkbox'], #formularioHome form input[type='checkbox'], #secNewsletter input[type='checkbox'] {
     display: inline;
     width: 1vw;
     height: 1vw;
     background-color: #f8f9fa;
     border-radius: 5px; }
-  #contactForm input[type='reset'], #formularioHome form input[type='reset'],
+  #contactForm input[type='reset'], #imagenHome form input[type='reset'], #llamadoAccion form input[type='reset'], #formularioHome form input[type='reset'], #secNewsletter input[type='reset'],
   #contactForm input[type='submit'],
-  #formularioHome form input[type='submit'] {
+  #imagenHome form input[type='submit'],
+  #llamadoAccion form input[type='submit'],
+  #formularioHome form input[type='submit'],
+  #secNewsletter input[type='submit'] {
     margin: 0 auto;
     width: 20%;
     background-color: #39DBC0;
@@ -137,30 +188,32 @@ h1 {
     border: white 1px solid;
     border-radius: 10px;
     cursor: pointer; }
-  #contactForm #aceptarPoliticas, #formularioHome form #aceptarPoliticas {
+  #contactForm #aceptarPoliticas, #imagenHome form #aceptarPoliticas, #llamadoAccion form #aceptarPoliticas, #formularioHome form #aceptarPoliticas, #secNewsletter #aceptarPoliticas {
     width: 35%;
     margin: 5px auto; }
 
-#contactForm, #formularioHome form {
-  width: 50%; }
-
-h3 {
+h2 {
   text-align: center;
-  margin: 10px 0 10px 0; }
+  font-size: 3.25vw;
+  margin: 10px 0 20px 0; }
 
 #formularioHome {
-  display: grid;
-  grid-template-columns: 40% 40%;
   justify-content: space-evenly; }
-  #formularioHome div p {
+  #formularioHome div {
     font-size: 1.5vw; }
-  #formularioHome div ul {
-    list-style: none; }
-  #formularioHome div ul li:before {
-    content: '✓ '; }
+    #formularioHome div ul {
+      list-style: none;
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 30% 30% 30%;
+      justify-content: space-around; }
+    #formularioHome div ul li:before {
+      content: '✓ '; }
   #formularioHome form {
-    width: 100%; }
-    #formularioHome form input[type='submit'] {
+    margin-top: 10px;
+    width: 50%; }
+    #formularioHome form input[type='submit'],
+    #formularioHome form .enviarForm {
       width: auto;
       margin-top: 5px;
       padding: 0 5px 0 5px; }
