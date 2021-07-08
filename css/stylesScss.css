@@ -94,7 +94,7 @@ h1 {
   text-align: center; }
 
 #llamadoAccion {
-  padding-bottom: 50px; }
+  padding-bottom: 2vw; }
   #llamadoAccion h3 {
     font-size: 2.5vw;
     text-align: center;
@@ -118,10 +118,12 @@ h1 {
   #seccionArticulos #englobaArticulos {
     display: flex;
     justify-content: space-evenly; }
-    #seccionArticulos #englobaArticulos div {
-      margin: 1px solid black; }
     #seccionArticulos #englobaArticulos .articuloDestacado {
+      background-color: #f8f9fa;
+      border: 1px solid black;
       padding: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       width: 25%;
       display: grid;
       grid-template-columns: 100%;
@@ -398,11 +400,15 @@ footer {
       justify-content: flex-end; }
   #englobaArticulos {
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
   .articuloDestacado {
-    width: 50%;
-    height: 40vw;
-    margin: 10px auto 0px auto; }
+    display: grid;
+    width: 60% !important;
+    grid-template-columns: 50% 50% !important;
+    grid-template-areas: "imagen texto" !important;
+    margin: 15px auto 0px auto;
+    padding: 5px !important; }
   .hide-mobile {
     display: none; }
   footer {
@@ -422,9 +428,11 @@ footer {
     flex-direction: column;
     justify-content: center; }
   .articuloDestacado {
-    width: 50%;
-    height: 40vw;
-    margin: 10px auto 0px auto; }
+    display: grid;
+    width: 70% !important;
+    grid-template-columns: 50% 50% !important;
+    grid-template-areas: "imagen texto" !important;
+    margin: 15px auto 0px auto; }
   .hide-mobile {
     display: none; }
   footer {
