@@ -11,14 +11,13 @@
 	height: auto;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 #topBar{
 	height: 25px;
 	display: flex;
-	// align-items: flex-end;
 	justify-content: flex-end;
 	background-color: black;
 	.miniRed{
-		// text-align: right;
 		height: 100%;
 		a{
 			img{
@@ -73,41 +72,54 @@ header{
 body{
 	background-color: $backgroundBody;
 }
+
+h1{
+	font-size: $tituloMedio;
+	text-align: center;
+}
+h2{
+	text-align: center;
+	font-size: $tituloChicoMedio;
+	margin: 10px 0 20px 0;
+}
+p{
+	margin-bottom: 0px !important;
+}
+
 #imagenHome{
 	@include centrar(center,100% ,0 );
-	height: 45vw;
+	height: 40rem;
 	background-image: url(../img/carrusel/home5.jpg);
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color:white;
 	text-shadow: 1px 1px black;
 	h1{
-		height: 60%;
 		padding-top: 20%;
 	 	font-size:$tituloGrande ;
 	}
 	p{
-		font-size: $tituloChico;
+		font-size: $textoGrande;
 		width:50%;
 		margin: 0 auto;
 	}
 	form{
 		@extend #contactForm ;
+		input[type="submit"]{
+			font-size: $textoGrande;
+			width: auto;
+		}
 	}
 }
 #seccionEstadistica{
-	display: flex;
-	justify-content:space-around;
 	text-align: center;
 	background-color: #0000000F;
 	opacity: 0.5;
 	.cantidadEstadistica{
-		font-size: $tituloGrande;
-		margin-bottom: 0px !important;
+		font-size: 3rem;
 	}
 	.estadisticas{
-		font-size: $tituloChico;
-		margin-bottom: 0px !important;
+		font-size: 2rem;
 		color: black;
 	}
 }
@@ -115,37 +127,33 @@ body{
 .fotoCarrusel{
 	display: flex;
 	width: 100%;
-	height: 40vw;
+	height: 35rem;
 	object-fit: cover;
 	margin-bottom: 30px;
-   object-position: 0% 35%;
+   object-position: 50% 35%;
 }
 
-h1{
-	font-size: 3.5vw;
-	text-align: center;
-}
 #llamadoAccion{
 	padding-bottom: 2vw;
 	h3{
-		font-size: $tituloChicoMedio;
-		@include centrar(center,40% ,0 auto )
+		font-size: $tituloChico;
+		@include centrar(center,auto ,0 auto )
 	}
 	form{
 		margin:0 auto;
-		@extend #contactForm
+		@extend #contactForm ;
+		input[type="submit"]{
+			font-size: $textoGrande;
+		}
 	}
 	#pasosForm{
-		display: flex;
-		justify-content: space-around;
 		text-align: center;
 		div{
-			width:25%;
 			.enumeracion{
 				font-size: $tituloGrande;
 			}
 			.accion{
-				font-size: $tituloChico;
+				font-size: $textoGrande;
 			}
 		}
 	}
@@ -176,18 +184,16 @@ h1{
 			}
 			article{
 				@include centrar(center,80% ,0);
-				font-size: 1vw;
+				font-size: $textoMedio;
 				grid-area: texto;
-
 			}
 		}
 	}
 }
-/* CONTACTO y Newsletter */
+
 #contactForm{
-	width: 50%;
 	margin:0 auto;
-	font-size: $textoGrande;
+	font-size: $textoChico;
 	margin-bottom: 30px;
 	span{
 		font-size: $textoChico;
@@ -199,10 +205,11 @@ h1{
 	textarea{
 		@include centrar(center,70% ,0 auto );
 		display: block;
+		padding-left: 5px;
 	}
 	#contactAsunto{
 		height: 40px;
-		font-size: $textoGrande;
+		font-size: $textoMedio;
 	}
 	.obligatorio{
 		font-size: 1vw;
@@ -210,8 +217,8 @@ h1{
 	}
 	input[type='checkbox'] {
 		display: inline;
-		width:1vw;
-		height:1vw;
+		width:1rem;
+		height:1ewm;
 		background-color:$backgroundMain;
 		border-radius:5px;
 	}
@@ -225,28 +232,45 @@ h1{
 		border-radius: 10px;
 		cursor:pointer;
 	}
-	#aceptarPoliticas{
-		width: 35%;
+	.aceptarPoliticas{
+		text-align: center;
+		width: auto;
 		margin: 5px auto;
 	}
 
 }
-
-h2{
-	text-align: center;
-	font-size: $tituloMedio;
-	margin: 10px 0 20px 0;
+/* CONTACTO y Newsletter */
+#infoContacto{
+	@include centrar(left,80% ,0 auto );
+	i{
+		font-size: $tituloMedio;
+	}	
+}	
+#mapa{
+	@include centrar(center,80% ,0 auto );
+	iframe{
+		width: 100%;
+		height: 20rem;
+	}
 }
+
 #formularioHome{
 	justify-content: space-evenly;
 	div{
-		font-size: $textoGrande;
 		ul{
-			list-style: none;
-			display: grid;
-			margin:0 auto;
-			grid-template-columns: 30% 30% 30%;
-			justify-content: space-around;
+			div{
+				justify-content: center;
+			}
+			// list-style: none;
+			// display: grid;
+			// margin:0 auto;
+			// grid-template-columns: 30% 30% 30%;
+			// justify-content: space-around;
+			
+			li{
+				font-size: $textoGrande;
+				list-style: none;
+			}
 		}
 		ul li:before {
 			content: '✓ ';
@@ -258,6 +282,7 @@ h2{
 		width:50%;
 		input[type='submit'],
 		.enviarForm{
+			font-size: $textoGrande;
 			width: auto;
 			margin-top: 5px;
 			padding:0 5px 0 5px;
@@ -265,21 +290,20 @@ h2{
 	}
 }
 #secNewsletter{
-	@extend #contactForm;
+	@extend #contactForm ;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: $colorNewsletter;
+	h3{
+		font-size: $tituloChico;
+	}
+	p{
+		font-size: $textoMedio;
+	}
 	#newsletter{
 		text-align: center;
-		font-size: $textoMedio;
-		h3{
-			font-size: $tituloChico;
-		}
-		p{
-			font-size: $textoMedio;
-		}
 		#newsletterEmail:focus{
 			width: 60%;
 		}
@@ -430,22 +454,18 @@ h2{
 
 // FOOTER
 footer{
-	font-weight: 100;
-	display: grid;
-	grid-template-columns: 20% 20% 20% 40%;
 	background-color: $backgroundMain;
-	padding: 20px;
+	a{
+		text-decoration: none
+	}
 	color: $colorTexto;
 	.piePagina{
 		text-align: center;
 		ul{
-			position: relative;
-			top: 0px;
 			padding-left: 0px;
-	
 			li{
 				list-style-type: none;
-				font-size: $textoMedio;
+				font-size: $textoChico;
 				margin:10px;
 			}
 			li:hover{
@@ -457,32 +477,8 @@ footer{
 		p{
 			text-align: center;
 			font-size: $tituloChico;
-			margin-bottom: 20px;
+			// margin-bottom: 20px;
 		}
-		.red-social{
-			margin: 10px;
-			display: grid;
-			grid-template-columns: 40% 60%;
-			row-gap: 0px;
-			grid-template-areas: "imagen texto";
-			align-items: center;
-			img{
-				grid-area: imagen;
-				width: 100%;
-			}
-			span{
-				grid-area: texto;
-				font-size: $textoGrande;
-			}
-			span:hover{
-				color:$colorNaranja;
-			}
-		}
-	}
-
-	#redes{
-		width: 50%;
-		margin: 0 auto;
 	}
 }
 @media only screen and (max-width:900px) {
@@ -510,9 +506,9 @@ footer{
 	.hide-mobile{
 		display: none;
 	}
-	footer{
-		height: auto;
-	}
+	// footer{
+	// 	height: auto;
+	// }
 	#owners{
 		display: flex;
 		flex-direction: column;
@@ -538,9 +534,6 @@ footer{
 	}
 	.hide-mobile{
 		display: none;
-	}
-	footer{
-		height: auto;
 	}
 	#owners{
 		display: flex;

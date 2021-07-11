@@ -8,7 +8,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+	<link rel="shortcut icon" href="img/logoMashipa4.png" type="image/x-icon">  
 	<link rel="stylesheet" href="css/stylesScss.css">
 	<title>Contacto Mashipa</title>
 </head>
@@ -65,84 +66,130 @@
 	</header>
 	<main>
 		<h1>Contacto</h1>
-		<form id="contactForm"action="#" method='POST'>
-			<label for="contactName">Nombre<span class="obligatorio">*</span></label>
-			<input id='contactName'type="text">
-			<label for="contactSurname">Apellido<span class="obligatorio">*</span></label>
-			<input id='contactSurname'type="text">
-			<label for="contactSchool">Colegio<span class="obligatorio">*</span></label>
-			<input id='contactSchool'type="text">
-			<label for="contactEmail">Correo electrónico<span class="obligatorio">*</span></label>
-			<input id='contactEmail'type="text">
-			<label for="contactAsunto">Motivo de contacto:</label>
-			<select name="asunto" id="contactAsunto">
-				<option value="1">Seleccionar...</option>
-				<option value="1">Obtener Presupuesto</option>
-				<option value="2">Ayuda con pagos</option>
-				<option value="3">Reclamo</option>
-			</select>
-			<label for="contactBody">Mensaje<span class="obligatorio">*</span></label>
-			<textarea id="contactBody" cols="50" rows="8"></textarea>
-			<div id="aceptarPoliticas">
-				<input class="aceptoPoliticas" type="checkbox">
-				<span>Acepto las politicas de privacidad<span class="obligatorio">*</span></span><br>
-			</div>
-			<input class="boton-formulario" type="submit" value="Enviar" class="enviarForm">
-			<input class="boton-formulario" type="reset" value="Borrar todo">
-		</form>
-	</main>
-	<footer>
-		<div class="piePagina">
-			<p>Nuestras redes</p>
-			<div id="redes">
-				<div class="red-social">
-					<img class="logo_redes" src="img/redes/whatsapp.png" alt="">
-					<span>Whatsapp</span>
-				</div >
-				<div class="red-social">
-					<img class="logo_redes" src="img/redes/instagram.png" alt="">
-					<span>Instagram</span>
-				</div>
-				<div class="red-social">
-					<img class="logo_redes" src="img/redes/facebook.png" alt="">
-					<span>Facebook</span>
-				</div>
-			</div>
-		</div>
-		<div class="piePagina">
-			<p>Navegación</p>
-			<ul>
-				<li>Política de privacidad</li>
-				<li>Política de cookies</li>
-				<li>Términos y condiciones</li>
-			</ul>
-		</div>
-		<div class="piePagina">
-			<p>Contáctanos</p>
-			<ul>
-				<li>+54 9 3517522242</li>
-				<li>+54 9 3517522242</li>
-				<li>info@mashipa.com</li>
-			</ul>
-		</div>
-		<div class="piePagina">
-			<!-- Newsletter -->
-			<section id="secNewsletter">
-				<div id="newsletter"> 
-					<h3>Suscribirse a la newsletter</h3>
-					<p>No te pierdas ninguna noticia acerca de Mashipa. Obtené descuentos increibles y recibí las mejores ideas para tu promoción</p>
-					<form action="#" method="POST">
-	
-						<input type="text" id='newsletterEmail' placeholder="Correo electrónico">
-						<div id="aceptarPoliticas">
-							<input class="aceptoPoliticas" type="checkbox">
-							<span>Acepto las politicas de privacidad<span class="obligatorio">*</span></span><br>
+		<section class="row">
+			<div class=" col-md-6 px-8 mb-4">
+				<div id="infoContacto" class="container-sm">
+					<div class="row mb-4">
+						<div class="col-xs-2 col-sm-2 ">
+							<i class="fab fa-whatsapp"></i>
 						</div>
-						<input class="boton-formulario" type="submit" value="Unirme">
-					</form>
-				</div>	
-			</section>
+						<div class="col-xs-10 col-sm-10 ">
+							<p>Telefono</p>
+							<span>+54 9 3517522242</span>
+						</div>	
+					</div>
+					<div class="row mb-4">
+						<div class="col-sm-2">
+							<i class="far fa-envelope"></i>
+						</div>
+						<div class="col-sm-10">
+							<p>Correo</p>
+							<span>info@mashipa.com</span>
+						</div>
+						
+					</div>
+					<div class="row mb-4">
+						<div class="col-sm-2">
+							<i class="fas fa-street-view"></i>
+						</div>
+						<div class="col-sm-10">
+							<p>Dirección</p>
+							<span>Av. Duarte Quiros 5000</span>
+						</div>
+					</div>
+				</div>
+				<div id="mapa">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0395541194675!2d-64.20674088500684!3d-31.413036281405365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298830933ad09%3A0xb72fd713f4c77c4e!2sNuevocentro%20Shopping!5e0!3m2!1ses!2ses!4v1625944025922!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<!-- <h3>Formulario de contacto</h3> -->
+				<form id="contactForm"action="#" method='POST'>
+					<label for="contactName">Nombre<span class="obligatorio">*</span></label>
+					<input id='contactName'type="text">
+					<label for="contactSurname">Apellido<span class="obligatorio">*</span></label>
+					<input id='contactSurname'type="text">
+					<label for="contactSchool">Colegio<span class="obligatorio">*</span></label>
+					<input id='contactSchool'type="text">
+					<label for="contactEmail">Correo electrónico<span class="obligatorio">*</span></label>
+					<input id='contactEmail'type="text">
+					<label for="contactAsunto">Motivo de contacto:</label>
+					<select name="asunto" id="contactAsunto">
+								<option value="1">Seleccionar...</option>
+								<option value="1">Obtener Presupuesto</option>
+								<option value="2">Ayuda con pagos</option>
+								<option value="3">Reclamo</option>
+							</select>
+							<label for="contactBody">Mensaje<span class="obligatorio">*</span></label>
+							<textarea id="contactBody" cols="50" rows="8"></textarea>
+							<div class="aceptarPoliticas">
+								<input class="aceptoPoliticas" type="checkbox">
+								<span>Acepto las politicas de privacidad<span class="obligatorio">*</span></span><br>
+							</div>
+							<input class="boton-formulario" type="submit" value="Enviar" class="enviarForm">
+							<input class="boton-formulario" type="reset" value="Borrar todo">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="container-fluid">
+		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		<div class="me-5 d-none d-lg-block">
+		  <span>Encontranos en todas las redes sociales</span>
 		</div>
+		<div>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-whatsapp"></i>
+				</a>
+			<a href="" class="me-4 text-reset">
+				<i class="fab fa-instagram"></i>
+		  </a>
+		</div>
+		<!-- Right -->
+	 </section>
+	 <!-- Section: Social media -->
+		<div class="row">
+			<div class="piePagina col-md-3 col-sm-6">
+				<p>Navegación</p>
+				<ul>
+					<li>Política de privacidad</li>
+					<li>Política de cookies</li>
+					<li>Términos y condiciones</li>
+				</ul>
+			</div>
+			<div class="piePagina col-md-3 col-sm-6">
+				<p>Contáctanos</p>
+				<ul>
+					<li>+54 9 3517522242</li>
+					<li>+54 9 3517522242</li>
+					<li>info@mashipa.com</li>
+				</ul>
+			</div>
+			<div class="piePagina col-md-6">
+				<!-- Newsletter -->
+				<section id="secNewsletter">
+					<div id="newsletter"> 
+						<h3 class="pt-2">Suscribirse a la newsletter</h3>
+						<p>No te pierdas ninguna noticia acerca de Mashipa. Obtené descuentos increibles y recibí las mejores ideas para tu promoción</p>
+						<form action="#" method="POST">
+		
+							<input type="text" id='newsletterEmail' placeholder="Correo electrónico">
+							<div class="aceptarPoliticas">
+								<input class="aceptoPoliticas" type="checkbox">
+								<span>Acepto las politicas de privacidad<span class="obligatorio">*</span></span><br>
+							</div>
+							<input class="boton-formulario" type="submit" value="Unirme">
+						</form>
+					</div>	
+				</section>
+			</div>			
+		</div>	
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

@@ -48,70 +48,74 @@ header {
 body {
   background-color: #faecd2; }
 
+h1 {
+  font-size: 3rem;
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 10px 0 20px 0; }
+
+p {
+  margin-bottom: 0px !important; }
+
 #imagenHome {
   text-align: center;
   margin: 0;
   width: 100%;
-  height: 45vw;
+  height: 40rem;
   background-image: url(../img/carrusel/home5.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   text-shadow: 1px 1px black; }
   #imagenHome h1 {
-    height: 60%;
     padding-top: 20%;
-    font-size: 4.5vw; }
+    font-size: 4.5rem; }
   #imagenHome p {
-    font-size: 2vw;
+    font-size: 1.5rem;
     width: 50%;
     margin: 0 auto; }
+  #imagenHome form input[type="submit"] {
+    font-size: 1.5rem;
+    width: auto; }
 
 #seccionEstadistica {
-  display: flex;
-  justify-content: space-around;
   text-align: center;
   background-color: #0000000F;
   opacity: 0.5; }
   #seccionEstadistica .cantidadEstadistica {
-    font-size: 4.5vw;
-    margin-bottom: 0px !important; }
+    font-size: 3rem; }
   #seccionEstadistica .estadisticas {
-    font-size: 2vw;
-    margin-bottom: 0px !important;
+    font-size: 2rem;
     color: black; }
 
 .fotoCarrusel {
   display: flex;
   width: 100%;
-  height: 40vw;
+  height: 35rem;
   object-fit: cover;
   margin-bottom: 30px;
-  object-position: 0% 35%; }
-
-h1 {
-  font-size: 3.5vw;
-  text-align: center; }
+  object-position: 50% 35%; }
 
 #llamadoAccion {
   padding-bottom: 2vw; }
   #llamadoAccion h3 {
-    font-size: 2.5vw;
+    font-size: 2rem;
     text-align: center;
     margin: 0 auto;
-    width: 40%; }
+    width: auto; }
   #llamadoAccion form {
     margin: 0 auto; }
+    #llamadoAccion form input[type="submit"] {
+      font-size: 1.5rem; }
   #llamadoAccion #pasosForm {
-    display: flex;
-    justify-content: space-around;
     text-align: center; }
-    #llamadoAccion #pasosForm div {
-      width: 25%; }
-      #llamadoAccion #pasosForm div .enumeracion {
-        font-size: 4.5vw; }
-      #llamadoAccion #pasosForm div .accion {
-        font-size: 2vw; }
+    #llamadoAccion #pasosForm div .enumeracion {
+      font-size: 4.5rem; }
+    #llamadoAccion #pasosForm div .accion {
+      font-size: 1.5rem; }
 
 #seccionArticulos {
   margin-bottom: 70px; }
@@ -138,17 +142,15 @@ h1 {
         text-align: center;
         margin: 0;
         width: 80%;
-        font-size: 1vw;
+        font-size: 1rem;
         grid-area: texto; }
 
-/* CONTACTO y Newsletter */
 #contactForm, #imagenHome form, #llamadoAccion form, #formularioHome form, #secNewsletter {
-  width: 50%;
   margin: 0 auto;
-  font-size: 1.5vw;
+  font-size: 1rem;
   margin-bottom: 30px; }
   #contactForm span, #imagenHome form span, #llamadoAccion form span, #formularioHome form span, #secNewsletter span {
-    font-size: 0.75vw; }
+    font-size: 1rem; }
   #contactForm input, #imagenHome form input, #llamadoAccion form input, #formularioHome form input, #secNewsletter input,
   #contactForm label,
   #imagenHome form label,
@@ -168,17 +170,18 @@ h1 {
     text-align: center;
     margin: 0 auto;
     width: 70%;
-    display: block; }
+    display: block;
+    padding-left: 5px; }
   #contactForm #contactAsunto, #imagenHome form #contactAsunto, #llamadoAccion form #contactAsunto, #formularioHome form #contactAsunto, #secNewsletter #contactAsunto {
     height: 40px;
-    font-size: 1.5vw; }
+    font-size: 1rem; }
   #contactForm .obligatorio, #imagenHome form .obligatorio, #llamadoAccion form .obligatorio, #formularioHome form .obligatorio, #secNewsletter .obligatorio {
     font-size: 1vw;
     color: red; }
   #contactForm input[type='checkbox'], #imagenHome form input[type='checkbox'], #llamadoAccion form input[type='checkbox'], #formularioHome form input[type='checkbox'], #secNewsletter input[type='checkbox'] {
     display: inline;
-    width: 1vw;
-    height: 1vw;
+    width: 1rem;
+    height: 1ewm;
     background-color: #f8f9fa;
     border-radius: 5px; }
   #contactForm input[type='reset'], #imagenHome form input[type='reset'], #llamadoAccion form input[type='reset'], #formularioHome form input[type='reset'], #secNewsletter input[type='reset'],
@@ -194,32 +197,42 @@ h1 {
     border: white 1px solid;
     border-radius: 10px;
     cursor: pointer; }
-  #contactForm #aceptarPoliticas, #imagenHome form #aceptarPoliticas, #llamadoAccion form #aceptarPoliticas, #formularioHome form #aceptarPoliticas, #secNewsletter #aceptarPoliticas {
-    width: 35%;
+  #contactForm .aceptarPoliticas, #imagenHome form .aceptarPoliticas, #llamadoAccion form .aceptarPoliticas, #formularioHome form .aceptarPoliticas, #secNewsletter .aceptarPoliticas {
+    text-align: center;
+    width: auto;
     margin: 5px auto; }
 
-h2 {
+/* CONTACTO y Newsletter */
+#infoContacto {
+  text-align: left;
+  margin: 0 auto;
+  width: 80%; }
+  #infoContacto i {
+    font-size: 3rem; }
+
+#mapa {
   text-align: center;
-  font-size: 3.25vw;
-  margin: 10px 0 20px 0; }
+  margin: 0 auto;
+  width: 80%; }
+  #mapa iframe {
+    width: 100%;
+    height: 20rem; }
 
 #formularioHome {
   justify-content: space-evenly; }
-  #formularioHome div {
-    font-size: 1.5vw; }
-    #formularioHome div ul {
-      list-style: none;
-      display: grid;
-      margin: 0 auto;
-      grid-template-columns: 30% 30% 30%;
-      justify-content: space-around; }
-    #formularioHome div ul li:before {
-      content: '✓ '; }
+  #formularioHome div ul div {
+    justify-content: center; }
+  #formularioHome div ul li {
+    font-size: 1.5rem;
+    list-style: none; }
+  #formularioHome div ul li:before {
+    content: '✓ '; }
   #formularioHome form {
     margin-top: 10px;
     width: 50%; }
     #formularioHome form input[type='submit'],
     #formularioHome form .enviarForm {
+      font-size: 1.5rem;
       width: auto;
       margin-top: 5px;
       padding: 0 5px 0 5px; }
@@ -230,13 +243,12 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #f8f9fa; }
+  #secNewsletter h3 {
+    font-size: 2rem; }
+  #secNewsletter p {
+    font-size: 1rem; }
   #secNewsletter #newsletter {
-    text-align: center;
-    font-size: 1vw; }
-    #secNewsletter #newsletter h3 {
-      font-size: 2vw; }
-    #secNewsletter #newsletter p {
-      font-size: 1vw; }
+    text-align: center; }
     #secNewsletter #newsletter #newsletterEmail:focus {
       width: 60%; }
 
@@ -277,7 +289,7 @@ h2 {
     font-size: 2vw; }
   #owners div p {
     padding: 10px;
-    font-size: 1.5vw; }
+    font-size: 1.5rem; }
 
 #ownerUno {
   width: 100%;
@@ -314,7 +326,7 @@ h2 {
   #colaboradores div p {
     width: 80%;
     margin: 0 auto;
-    font-size: 1vw; }
+    font-size: 1rem; }
   #colaboradores div h3 {
     font-size: 2vw; }
 
@@ -352,46 +364,23 @@ h2 {
       border: 1px solid black; }
 
 footer {
-  font-weight: 100;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 40%;
   background-color: #f8f9fa;
-  padding: 20px;
   color: black; }
+  footer a {
+    text-decoration: none; }
   footer .piePagina {
     text-align: center; }
     footer .piePagina ul {
-      position: relative;
-      top: 0px;
       padding-left: 0px; }
       footer .piePagina ul li {
         list-style-type: none;
-        font-size: 1vw;
+        font-size: 1rem;
         margin: 10px; }
       footer .piePagina ul li:hover {
         color: #f5772e; }
   footer div p {
     text-align: center;
-    font-size: 2vw;
-    margin-bottom: 20px; }
-  footer div .red-social {
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    row-gap: 0px;
-    grid-template-areas: "imagen texto";
-    align-items: center; }
-    footer div .red-social img {
-      grid-area: imagen;
-      width: 100%; }
-    footer div .red-social span {
-      grid-area: texto;
-      font-size: 1.5vw; }
-    footer div .red-social span:hover {
-      color: #f5772e; }
-  footer #redes {
-    width: 50%;
-    margin: 0 auto; }
+    font-size: 2rem; }
 
 @media only screen and (max-width: 900px) {
   header {
@@ -411,8 +400,6 @@ footer {
     padding: 5px !important; }
   .hide-mobile {
     display: none; }
-  footer {
-    height: auto; }
   #owners {
     display: flex;
     flex-direction: column;
@@ -435,8 +422,6 @@ footer {
     margin: 15px auto 0px auto; }
   .hide-mobile {
     display: none; }
-  footer {
-    height: auto; }
   #owners {
     display: flex;
     flex-direction: column;
