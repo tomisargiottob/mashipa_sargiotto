@@ -73,7 +73,7 @@
 				<input type="submit" value="Quiero saber mas!" class="enviarForm">
 			</form>
 		</div>
-		<section id="seccionEstadistica" class="container d-md-block d-sm-none">
+		<section id="seccionEstadistica" class="container-flex d-md-block d-sm-none hide-mobile">
 			<div class="row">
 				<div class="col-md-4" >
 					<p class="cantidadEstadistica">5000</p>
@@ -174,30 +174,35 @@
 			</form>
 		</section>
 		<!-- Articulos destacados -->
-		<section id='seccionArticulos'>
-			<div id='englobaArticulos'>
-				<div class="articuloDestacado">
-					<img class='imagenArticulosDestacados' src="img/carrusel/aleman_03_01.jfif" alt="">
+		<div id='seccionArticulos' class="container-flex">
+			<div id='englobaArticulos' class="row justify-content-around">
+				<div class="articuloDestacado col-md-3 col-sm-6 col-xs-6 p-3 m-2">
+					<div>
+						<img class='imagenArticulosDestacados' src="img/carrusel/aleman_03_01.jfif" alt="">
+					</div>
 					<article>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius minima, hic nemo amet rerum officiis architecto id non inventore praesentium nostrum temporibus blanditiis, quas veritatis libero vero qui laudantium.
 					</article>
 				</div>
-				<div class="articuloDestacado">
-					<img class='imagenArticulosDestacados' src="img/carrusel/sociales_grupo_01.jfif" alt="">
-					
+				<div class="articuloDestacado col-md-3 col-sm-6 col-xs-6 p-3 m-2">
+					<div>
+						<img class='imagenArticulosDestacados' src="img/carrusel/sociales_grupo_01.jfif" alt="">
+					</div>
 					<article>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius minima, hic nemo amet rerum officiis architecto id non inventore praesentium nostrum temporibus blanditiis, quas veritatis libero vero qui laudantium.			
 					</article>
 				</div>
-				<div class="articuloDestacado">
-					<img class='imagenArticulosDestacados' src="img/carrusel/lujan_bandera_grupo.jpg" alt="">
+				<div class="articuloDestacado col-md-3 col-sm-6 col-xs-6 p-3 m-2">
+					<div>
+						<img class='imagenArticulosDestacados' src="img/carrusel/lujan_bandera_grupo.jpg" alt="">
+					</div>
 					<article>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit laborum aliquam debitis necessitatibus voluptatem consequuntur quibusdam. Cum velit distinctio, libero, quo mollitia eos dolore iure laborum aut quis sequi?
 					</article>
 				</div>
 				
-		 </div>		
-		</section>	
+		 	</div>		
+		</div>	
 	</main>
 	<footer class="container-fluid">
 		<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">

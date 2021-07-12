@@ -41,7 +41,7 @@ header {
       header nav li a {
         text-align: center;
         text-decoration: none;
-        font-size: 2vw;
+        font-size: 1rem;
         font-family: 'Alfa Slab One', cursive;
         color: #f8f9fa; }
 
@@ -75,11 +75,9 @@ p {
     font-size: 4.5rem; }
   #imagenHome p {
     font-size: 1.5rem;
-    width: 50%;
     margin: 0 auto; }
   #imagenHome form input[type="submit"] {
-    font-size: 1.5rem;
-    width: auto; }
+    font-size: 1.5rem; }
 
 #seccionEstadistica {
   text-align: center;
@@ -109,7 +107,9 @@ p {
   #llamadoAccion form {
     margin: 0 auto; }
     #llamadoAccion form input[type="submit"] {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      width: auto !important;
+      padding: 0px 5px 0px 5px; }
   #llamadoAccion #pasosForm {
     text-align: center; }
     #llamadoAccion #pasosForm div .enumeracion {
@@ -118,32 +118,15 @@ p {
       font-size: 1.5rem; }
 
 #seccionArticulos {
-  margin-bottom: 70px; }
-  #seccionArticulos #englobaArticulos {
-    display: flex;
-    justify-content: space-evenly; }
-    #seccionArticulos #englobaArticulos .articuloDestacado {
-      background-color: #f8f9fa;
-      border: 1px solid black;
-      padding: 10px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      width: 25%;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-areas: "imagen" "texto";
-      align-items: center;
-      justify-items: center; }
-      #seccionArticulos #englobaArticulos .articuloDestacado img {
-        grid-area: imagen;
-        width: 80%;
-        object-fit: contain; }
-      #seccionArticulos #englobaArticulos .articuloDestacado article {
-        text-align: center;
-        margin: 0;
-        width: 80%;
-        font-size: 1rem;
-        grid-area: texto; }
+  width: 100%;
+  margin: 0px 0px 70px 00px; }
+  #seccionArticulos #englobaArticulos img {
+    width: 100%; }
+  #seccionArticulos #englobaArticulos article {
+    text-align: center; }
+  #seccionArticulos #englobaArticulos .articuloDestacado {
+    background-color: #f8f9fa;
+    border: 1px solid black; }
 
 #contactForm, #imagenHome form, #llamadoAccion form, #formularioHome form, #secNewsletter {
   margin: 0 auto;
@@ -229,11 +212,11 @@ p {
     content: '✓ '; }
   #formularioHome form {
     margin-top: 10px;
-    width: 50%; }
+    width: 75%; }
     #formularioHome form input[type='submit'],
     #formularioHome form .enviarForm {
-      font-size: 1.5rem;
       width: auto;
+      font-size: 1.5rem;
       margin-top: 5px;
       padding: 0 5px 0 5px; }
 
@@ -387,17 +370,6 @@ footer {
     grid-template-columns: 30% 70%; }
     header .container-fluid {
       justify-content: flex-end; }
-  #englobaArticulos {
-    flex-direction: column;
-    justify-content: center;
-    width: 100%; }
-  .articuloDestacado {
-    display: grid;
-    width: 60% !important;
-    grid-template-columns: 50% 50% !important;
-    grid-template-areas: "imagen texto" !important;
-    margin: 15px auto 0px auto;
-    padding: 5px !important; }
   .hide-mobile {
     display: none; }
   #owners {
@@ -407,21 +379,14 @@ footer {
     margin: 5px auto 5px auto;
     width: 60%; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   header {
     grid-template-columns: 40% 60%;
     align-items: center; }
-  #englobaArticulos {
-    flex-direction: column;
-    justify-content: center; }
-  .articuloDestacado {
-    display: grid;
-    width: 70% !important;
-    grid-template-columns: 50% 50% !important;
-    grid-template-areas: "imagen texto" !important;
-    margin: 15px auto 0px auto; }
   .hide-mobile {
     display: none; }
+  .articuloDestacado {
+    width: 70%; }
   #owners {
     display: flex;
     flex-direction: column;
