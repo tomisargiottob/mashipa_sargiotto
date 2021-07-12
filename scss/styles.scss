@@ -61,7 +61,7 @@ header{
 			a{
 				text-align: center;
 				text-decoration: none;
-				font-size: $textoMedio;
+				font-size: $textoGrande;
 				font-family: 'Alfa Slab One', cursive;
 				color: $backgroundMain;
 			}
@@ -170,31 +170,9 @@ p{
 		article{
 			text-align: center;
 		}
-// 		display:flex;
-// 		justify-content:space-evenly;
 		.articuloDestacado{
 			background-color: $backgroundMain;
 			border:1px solid black;
-// 			padding:10px;
-// 			padding-top: 20px;
-// 			padding-bottom: 20px;
-// 			width: 25%;
-// 			display: grid;
-// 			grid-template-columns: 100%;
-// 			grid-template-areas: "imagen"
-// 										"texto";
-// 			align-items: center;
-// 			justify-items: center;
-// 			img{
-// 				grid-area: imagen;
-// 				width:80%;
-// 				object-fit: contain;
-// 			}
-// 			article{
-// 				@include centrar(center,80% ,0);
-// 				font-size: $textoMedio;
-// 				grid-area: texto;
-// 			}
 		}
 	}
 }
