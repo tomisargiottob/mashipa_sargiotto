@@ -6,7 +6,7 @@ Se agregaron descripciones que contengan palabras claves y se quitaron los texto
 
 Se agregó descripciones a todas las paginas con un titulo acorde al contenido de las mismas.
 
-todas las imagenes tienen ahora un texto alternativo.
+Todas las imagenes tienen ahora un texto alternativo.
 
 Las palabras claves que se encontraran muy seguido son:
 	buzo de egresado
@@ -19,3 +19,6 @@ Las palabras claves que se encontraran muy seguido son:
 	diseño unico de campera de egresado
 	diseño de buzos
 
+se comprimieron las imagenes para reducir el tamaño
+
+agregue meta og

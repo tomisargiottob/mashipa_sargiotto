@@ -212,11 +212,11 @@ p{
 	}
 	input[type='reset'],
 	input[type='submit']{
-		margin: 0 auto;
+		margin: 10px auto;
 		width:20%;
 		background-color: $colorVerde;
 		color:white;
-		border:white 1px solid;
+		border:black 1px solid;
 		border-radius: 10px;
 		cursor:pointer;
 	}
@@ -349,6 +349,7 @@ p{
 	align-items: center;
 	div {
 		h2{
+			margin-bottom: 0px;
 			padding: 10px;
 			font-size: $tituloChicoMedio;
 		}
@@ -359,6 +360,20 @@ p{
 		img{
 			width: 100%;
 		}
+		.redesOwner{
+			@extend .redesOwner ;
+			width: 30%;
+		}
+	}
+}
+.redesOwner{
+	display:flex;
+	justify-content: center;
+	margin:0 auto;
+	a{
+		margin: 5px !important;
+		text-align: center;
+		text-decoration: none
 	}
 }
 #seccionColaboradores{

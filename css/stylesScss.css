@@ -175,11 +175,11 @@ p {
   #llamadoAccion form input[type='submit'],
   #formularioHome form input[type='submit'],
   #secNewsletter input[type='submit'] {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 20%;
     background-color: #39DBC0;
     color: white;
-    border: white 1px solid;
+    border: black 1px solid;
     border-radius: 10px;
     cursor: pointer; }
   #contactForm .aceptarPoliticas, #imagenHome form .aceptarPoliticas, #llamadoAccion form .aceptarPoliticas, #formularioHome form .aceptarPoliticas, #secNewsletter .aceptarPoliticas {
@@ -281,6 +281,7 @@ p {
   padding: 20px;
   align-items: center; }
   #owners div h2 {
+    margin-bottom: 0px;
     padding: 10px;
     font-size: 2.5rem; }
   #owners div p {
@@ -288,6 +289,17 @@ p {
     font-size: 1rem; }
   #owners div img {
     width: 100%; }
+  #owners div .redesOwner {
+    width: 30%; }
+
+.redesOwner, #owners div .redesOwner {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto; }
+  .redesOwner a, #owners div .redesOwner a {
+    margin: 5px !important;
+    text-align: center;
+    text-decoration: none; }
 
 #seccionColaboradores h3 {
   text-align: center; }
