@@ -291,41 +291,6 @@ p{
 		}
 	}
 }
-
-// Galeria
-// .galeriaPrincipal{
-// 	display: grid;
-// 	width: 70%;
-// 	margin:20px auto;
-// 	column-gap: 10px;
-// 	row-gap: 10px;
-// 	grid-template-columns: 24% 24% 24% 24%;
-// 	grid-template-rows:auto auto auto auto auto;
-// 	grid-template-areas: "imagen1 imagen1 imagen2 imagen2"
-// 								"imagen1 imagen1 imagen2 imagen2"
-// 								"imagen3 imagen4 imagen5 imagen6"
-// 								"imagen7 imagen7 imagen8 imagen8"
-// 								"imagen7 imagen7 imagen8 imagen8";
-// 	align-items: center;
-// 	#imagenPrincipal{
-// 		grid-area: imagen1;
-// 	}
-// 	#imagenSecundaria{
-// 		grid-area: imagen2;
-// 	}
-// 	#imagenTerciaria{
-// 		grid-area: imagen7;
-// 	}
-// 	#imagenCuarta{
-// 		grid-area: imagen8;
-// 	}
-// 	.imagenGaleria{
-// 		width: 100%;
-// 		img{
-// 			width: 100%;
-// 		}
-// 	}
-// }
 .galeriaPrincipal{
 	img{
 		width: 100%;
