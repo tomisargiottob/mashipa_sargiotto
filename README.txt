@@ -21,4 +21,4 @@ Las palabras claves que se encontraran muy seguido son:
 
 se comprimieron las imagenes para reducir el tamaño
 
-agregue meta og
+agreguè meta og
