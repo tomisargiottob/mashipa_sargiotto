@@ -400,12 +400,28 @@ p{
 		}
 	}
 }
-
+#error{
+	p{
+		text-align: center;
+		padding: 40px;
+		font-size: $textoGrande;
+	}
+	div{
+		text-align: center;
+		img{
+			margin:0 auto;
+		}
+	}
+}
 // FOOTER
 footer{
 	background-color: $backgroundMain;
 	a{
-		text-decoration: none
+		text-decoration: none;
+		color: black;
+	}
+	a:hover{
+		color:$colorNaranja;
 	}
 	color: $colorTexto;
 	.piePagina{
@@ -429,6 +445,9 @@ footer{
 			// margin-bottom: 20px;
 		}
 	}
+}
+.row{
+	margin-right: 0px !important;
 }
 @media only screen and (max-width:1500px) {
 	nav{

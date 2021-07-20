@@ -319,11 +319,24 @@ p {
     #precios table th {
       border: 1px solid black; }
 
+#error p {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.5rem; }
+
+#error div {
+  text-align: center; }
+  #error div img {
+    margin: 0 auto; }
+
 footer {
   background-color: #f8f9fa;
   color: black; }
   footer a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: black; }
+  footer a:hover {
+    color: #f5772e; }
   footer .piePagina {
     text-align: center; }
     footer .piePagina ul {
@@ -337,6 +350,9 @@ footer {
   footer div p {
     text-align: center;
     font-size: 2rem; }
+
+.row {
+  margin-right: 0px !important; }
 
 @media only screen and (max-width: 1500px) {
   nav li a {
