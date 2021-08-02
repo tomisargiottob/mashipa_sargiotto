@@ -17,7 +17,7 @@
 	display: flex;
 	justify-content: flex-end;
 	background-color: black;
-	.miniRed{
+	.mini-red{
 		height: 100%;
 		a{
 			img{
@@ -32,11 +32,11 @@ header{
 	grid-template-areas: "logo navbar";
 	background-color: $backgroundMain;
 	
-	#logoImagen{
+	#logo-imagen{
 		grid-area: logo;
 		
 	}
-	#logomenor{
+	#logo-menor{
 		width: 100%;
 	}
 
@@ -87,7 +87,7 @@ p{
 	margin-bottom: 0px !important;
 }
 
-#imagenHome{
+#imagen-home{
 	@include centrar(center,100% ,0 );
 	height: 40rem;
 	background-image: url(../img/carrusel/home5.jpg);
@@ -104,17 +104,17 @@ p{
 		margin: 0 auto;
 	}
 	form{
-		@extend #contactForm ;
+		@extend #contacting-form ;
 		input[type="submit"]{
 			font-size: $textoGrande;
 		}
 	}
 }
-#seccionEstadistica{
+#stadistic-section{
 	text-align: center;
 	background-color: #0000000F;
 	opacity: 0.5;
-	.cantidadEstadistica{
+	.stadistic-amount{
 		font-size: 3rem;
 	}
 	.estadisticas{
@@ -132,7 +132,7 @@ p{
    object-position: 50% 35%;
 }
 
-#llamadoAccion{
+#call-to-action{
 	padding-bottom: 2vw;
 	h3{
 		font-size: $tituloChico;
@@ -140,14 +140,14 @@ p{
 	}
 	form{
 		margin:0 auto;
-		@extend #contactForm ;
+		@extend #contacting-form ;
 		input[type="submit"]{
 			font-size: $textoGrande;
 			width: auto !important;
 			padding: 0px 5px 0px 5px;
 		}
 	}
-	#pasosForm{
+	#form-steps{
 		text-align: center;
 		div{
 			.enumeracion{
@@ -160,10 +160,10 @@ p{
 	}
 }
 
-#seccionArticulos{
+#article-section{
 	width: 100%;
 	margin:0px 0px 70px 00px;
-	#englobaArticulos{
+	#article-surround{
 		img{
 			width: 100%;
 		}
@@ -171,14 +171,14 @@ p{
 			text-align: center;
 			padding-top: 10px;
 		}
-		.articuloDestacado{
+		.article-main{
 			background-color: $backgroundMain;
 			border:1px solid black;
 		}
 	}
 }
 
-#contactForm{
+#contacting-form{
 	margin:0 auto;
 	font-size: $textoMedio;
 	margin-bottom: 30px;
@@ -194,11 +194,11 @@ p{
 		display: block;
 		padding-left: 5px;
 	}
-	#contactAsunto{
+	#contacting-topic{
 		height: 40px;
 		font-size: $textoMedio;
 	}
-	.obligatorio{
+	.obligatory{
 		font-size: $textoChico;
 		color: red;
 	}
@@ -218,13 +218,13 @@ p{
 		border-radius: 10px;
 		cursor:pointer;
 	}
-	.aceptarPoliticas{
+	.aceptar-politicas{
 		@include centrar(center,auto ,5px auto );
 	}
 
 }
 /* CONTACTO y Newsletter */
-#infoContacto{
+#info-contacto{
 	@include centrar(left,80% ,0 auto );
 	i{
 		font-size: $tituloMedio;
@@ -238,7 +238,7 @@ p{
 	}
 }
 
-#formularioHome{
+#home-form{
 	justify-content: space-evenly;
 	div{
 		ul{
@@ -255,11 +255,11 @@ p{
 		 }
 	}
 	form{
-		@extend #contactForm ;
+		@extend #contacting-form ;
 		margin-top: 10px;
 		width:75%;
 		input[type='submit'],
-		.enviarForm{
+		.send-form{
 			width: auto;
 			font-size: $textoGrande;
 			margin-top: 5px;
@@ -267,8 +267,8 @@ p{
 		}
 	}
 }
-#secNewsletter{
-	@extend #contactForm ;
+#newsletter-section{
+	@extend #contacting-form ;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -356,13 +356,13 @@ p{
 		img{
 			width: 100%;
 		}
-		.redesOwner{
-			@extend .redesOwner ;
+		.owner-links{
+			@extend .owner-links ;
 			width: 30%;
 		}
 	}
 }
-.redesOwner{
+.owner-links{
 	display:flex;
 	justify-content: center;
 	margin:0 auto;
@@ -372,8 +372,8 @@ p{
 		text-decoration: none
 	}
 }
-#seccionColaboradores{
-	@extend #seccionArticulos ;
+#colab-section{
+	@extend #article-section ;
 	h3{
 		text-align: center;
 	}
@@ -423,7 +423,7 @@ footer{
 		}
 	}
 	color: $colorTexto;
-	.piePagina{
+	.pie-pagina{
 		text-align: center;
 		ul{
 			padding-left: 0px;
@@ -508,7 +508,7 @@ footer{
 	.hide-mobile{
 		display: none;
 	}
-	.articuloDestacado{
+	.article-main{
 		width: 70%;
 	}
 	#design{
@@ -531,7 +531,7 @@ footer{
 	.hide-mobile{
 		display: none;
 	}
-	.articuloDestacado{
+	.article-main{
 		width: 70%;
 	}
 	#design{

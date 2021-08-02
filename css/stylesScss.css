@@ -10,9 +10,9 @@
   display: flex;
   justify-content: flex-end;
   background-color: black; }
-  #topBar .miniRed {
+  #topBar .mini-red {
     height: 100%; }
-    #topBar .miniRed a img {
+    #topBar .mini-red a img {
       height: 80%; }
 
 header {
@@ -20,9 +20,9 @@ header {
   grid-template-columns: 20% 80%;
   grid-template-areas: "logo navbar";
   background-color: #f8f9fa; }
-  header #logoImagen {
+  header #logo-imagen {
     grid-area: logo; }
-  header #logomenor {
+  header #logo-menor {
     width: 100%; }
   header nav {
     width: 100% !important;
@@ -62,7 +62,7 @@ h2 {
 p {
   margin-bottom: 0px !important; }
 
-#imagenHome {
+#imagen-home {
   text-align: center;
   margin: 0;
   width: 100%;
@@ -72,22 +72,22 @@ p {
   background-repeat: no-repeat;
   color: white;
   text-shadow: 1px 1px black; }
-  #imagenHome h1 {
+  #imagen-home h1 {
     padding-top: 20%;
     font-size: 4.5rem; }
-  #imagenHome p {
+  #imagen-home p {
     font-size: 1.5rem;
     margin: 0 auto; }
-  #imagenHome form input[type="submit"] {
+  #imagen-home form input[type="submit"] {
     font-size: 1.5rem; }
 
-#seccionEstadistica {
+#stadistic-section {
   text-align: center;
   background-color: #0000000F;
   opacity: 0.5; }
-  #seccionEstadistica .cantidadEstadistica {
+  #stadistic-section .stadistic-amount {
     font-size: 3rem; }
-  #seccionEstadistica .estadisticas {
+  #stadistic-section .estadisticas {
     font-size: 2rem;
     color: black; }
 
@@ -99,82 +99,82 @@ p {
   margin-bottom: 30px;
   object-position: 50% 35%; }
 
-#llamadoAccion {
+#call-to-action {
   padding-bottom: 2vw; }
-  #llamadoAccion h3 {
+  #call-to-action h3 {
     font-size: 2rem;
     text-align: center;
     margin: 0 auto;
     width: auto; }
-  #llamadoAccion form {
+  #call-to-action form {
     margin: 0 auto; }
-    #llamadoAccion form input[type="submit"] {
+    #call-to-action form input[type="submit"] {
       font-size: 1.5rem;
       width: auto !important;
       padding: 0px 5px 0px 5px; }
-  #llamadoAccion #pasosForm {
+  #call-to-action #form-steps {
     text-align: center; }
-    #llamadoAccion #pasosForm div .enumeracion {
+    #call-to-action #form-steps div .enumeracion {
       font-size: 4.5rem; }
-    #llamadoAccion #pasosForm div .accion {
+    #call-to-action #form-steps div .accion {
       font-size: 1.5rem; }
 
-#seccionArticulos, #seccionColaboradores {
+#article-section, #colab-section {
   width: 100%;
   margin: 0px 0px 70px 00px; }
-  #seccionArticulos #englobaArticulos img, #seccionColaboradores #englobaArticulos img {
+  #article-section #article-surround img, #colab-section #article-surround img {
     width: 100%; }
-  #seccionArticulos #englobaArticulos article, #seccionColaboradores #englobaArticulos article {
+  #article-section #article-surround article, #colab-section #article-surround article {
     text-align: center;
     padding-top: 10px; }
-  #seccionArticulos #englobaArticulos .articuloDestacado, #seccionColaboradores #englobaArticulos .articuloDestacado {
+  #article-section #article-surround .article-main, #colab-section #article-surround .article-main {
     background-color: #f8f9fa;
     border: 1px solid black; }
 
-#contactForm, #imagenHome form, #llamadoAccion form, #formularioHome form, #secNewsletter {
+#contacting-form, #imagen-home form, #call-to-action form, #home-form form, #newsletter-section {
   margin: 0 auto;
   font-size: 1rem;
   margin-bottom: 30px; }
-  #contactForm span, #imagenHome form span, #llamadoAccion form span, #formularioHome form span, #secNewsletter span {
+  #contacting-form span, #imagen-home form span, #call-to-action form span, #home-form form span, #newsletter-section span {
     font-size: 0.75rem; }
-  #contactForm input, #imagenHome form input, #llamadoAccion form input, #formularioHome form input, #secNewsletter input,
-  #contactForm label,
-  #imagenHome form label,
-  #llamadoAccion form label,
-  #formularioHome form label,
-  #secNewsletter label,
-  #contactForm select,
-  #imagenHome form select,
-  #llamadoAccion form select,
-  #formularioHome form select,
-  #secNewsletter select,
-  #contactForm textarea,
-  #imagenHome form textarea,
-  #llamadoAccion form textarea,
-  #formularioHome form textarea,
-  #secNewsletter textarea {
+  #contacting-form input, #imagen-home form input, #call-to-action form input, #home-form form input, #newsletter-section input,
+  #contacting-form label,
+  #imagen-home form label,
+  #call-to-action form label,
+  #home-form form label,
+  #newsletter-section label,
+  #contacting-form select,
+  #imagen-home form select,
+  #call-to-action form select,
+  #home-form form select,
+  #newsletter-section select,
+  #contacting-form textarea,
+  #imagen-home form textarea,
+  #call-to-action form textarea,
+  #home-form form textarea,
+  #newsletter-section textarea {
     text-align: center;
     margin: 0 auto;
     width: 70%;
     display: block;
     padding-left: 5px; }
-  #contactForm #contactAsunto, #imagenHome form #contactAsunto, #llamadoAccion form #contactAsunto, #formularioHome form #contactAsunto, #secNewsletter #contactAsunto {
+  #contacting-form #contacting-topic, #imagen-home form #contacting-topic, #call-to-action form #contacting-topic, #home-form form #contacting-topic, #newsletter-section #contacting-topic {
     height: 40px;
     font-size: 1rem; }
-  #contactForm .obligatorio, #imagenHome form .obligatorio, #llamadoAccion form .obligatorio, #formularioHome form .obligatorio, #secNewsletter .obligatorio {
+  #contacting-form .obligatory, #imagen-home form .obligatory, #call-to-action form .obligatory, #home-form form .obligatory, #newsletter-section .obligatory {
     font-size: 0.75rem;
     color: red; }
-  #contactForm input[type='checkbox'], #imagenHome form input[type='checkbox'], #llamadoAccion form input[type='checkbox'], #formularioHome form input[type='checkbox'], #secNewsletter input[type='checkbox'] {
+  #contacting-form input[type='checkbox'], #imagen-home form input[type='checkbox'], #call-to-action form input[type='checkbox'], #home-form form input[type='checkbox'], #newsletter-section input[type='checkbox'] {
     display: inline;
     width: 1rem;
     background-color: #f8f9fa;
     border-radius: 5px; }
-  #contactForm input[type='reset'], #imagenHome form input[type='reset'], #llamadoAccion form input[type='reset'], #formularioHome form input[type='reset'], #secNewsletter input[type='reset'],
-  #contactForm input[type='submit'],
-  #imagenHome form input[type='submit'],
-  #llamadoAccion form input[type='submit'],
-  #formularioHome form input[type='submit'],
-  #secNewsletter input[type='submit'] {
+  #contacting-form input[type='reset'], #imagen-home form input[type='reset'], #call-to-action form input[type='reset'], #home-form form input[type='reset'], #newsletter-section input[type='reset'],
+  #contacting-form input[type='submit'],
+  #imagen-home form input[type='submit'],
+  #call-to-action form input[type='submit'],
+  #home-form form input[type='submit'],
+  #newsletter-section input[type='submit'] {
     margin: 10px auto;
     width: 20%;
     background-color: #39DBC0;
@@ -182,17 +182,17 @@ p {
     border: black 1px solid;
     border-radius: 10px;
     cursor: pointer; }
-  #contactForm .aceptarPoliticas, #imagenHome form .aceptarPoliticas, #llamadoAccion form .aceptarPoliticas, #formularioHome form .aceptarPoliticas, #secNewsletter .aceptarPoliticas {
+  #contacting-form .aceptar-politicas, #imagen-home form .aceptar-politicas, #call-to-action form .aceptar-politicas, #home-form form .aceptar-politicas, #newsletter-section .aceptar-politicas {
     text-align: center;
     margin: 5px auto;
     width: auto; }
 
 /* CONTACTO y Newsletter */
-#infoContacto {
+#info-contacto {
   text-align: left;
   margin: 0 auto;
   width: 80%; }
-  #infoContacto i {
+  #info-contacto i {
     font-size: 3em; }
 
 #mapa {
@@ -203,38 +203,38 @@ p {
     width: 100%;
     height: 20rem; }
 
-#formularioHome {
+#home-form {
   justify-content: space-evenly; }
-  #formularioHome div ul div {
+  #home-form div ul div {
     justify-content: center; }
-  #formularioHome div ul li {
+  #home-form div ul li {
     font-size: 1.5rem;
     list-style: none; }
-  #formularioHome div ul li:before {
+  #home-form div ul li:before {
     content: '✓ '; }
-  #formularioHome form {
+  #home-form form {
     margin-top: 10px;
     width: 75%; }
-    #formularioHome form input[type='submit'],
-    #formularioHome form .enviarForm {
+    #home-form form input[type='submit'],
+    #home-form form .send-form {
       width: auto;
       font-size: 1.5rem;
       margin-top: 5px;
       padding: 0 5px 0 5px; }
 
-#secNewsletter {
+#newsletter-section {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f8f9fa; }
-  #secNewsletter h3 {
+  #newsletter-section h3 {
     font-size: 2rem; }
-  #secNewsletter p {
+  #newsletter-section p {
     font-size: 1rem; }
-  #secNewsletter #newsletter {
+  #newsletter-section #newsletter {
     text-align: center; }
-    #secNewsletter #newsletter #newsletterEmail:focus {
+    #newsletter-section #newsletter #newsletterEmail:focus {
       width: 60%; }
 
 .galeriaPrincipal img, .cargarMas img {
@@ -289,19 +289,19 @@ p {
     font-size: 1rem; }
   #owners div img {
     width: 100%; }
-  #owners div .redesOwner {
+  #owners div .owner-links {
     width: 30%; }
 
-.redesOwner, #owners div .redesOwner {
+.owner-links, #owners div .owner-links {
   display: flex;
   justify-content: center;
   margin: 0 auto; }
-  .redesOwner a, #owners div .redesOwner a {
+  .owner-links a, #owners div .owner-links a {
     margin: 5px !important;
     text-align: center;
     text-decoration: none; }
 
-#seccionColaboradores h3 {
+#colab-section h3 {
   text-align: center; }
 
 #descripcionPrecios {
@@ -342,15 +342,15 @@ footer {
     color: black; }
     footer a:hover {
       color: #f5772e; }
-  footer .piePagina {
+  footer .pie-pagina {
     text-align: center; }
-    footer .piePagina ul {
+    footer .pie-pagina ul {
       padding-left: 0px; }
-      footer .piePagina ul li {
+      footer .pie-pagina ul li {
         list-style-type: none;
         font-size: 1rem;
         margin: 10px; }
-        footer .piePagina ul li:hover {
+        footer .pie-pagina ul li:hover {
           color: #f5772e; }
   footer div p {
     text-align: center;
@@ -397,7 +397,7 @@ footer {
     align-items: center; }
   .hide-mobile {
     display: none; }
-  .articuloDestacado {
+  .article-main {
     width: 70%; }
   #design {
     width: 80%;
@@ -413,7 +413,7 @@ footer {
     align-items: center; }
   .hide-mobile {
     display: none; }
-  .articuloDestacado {
+  .article-main {
     width: 70%; }
   #design {
     width: 80%;

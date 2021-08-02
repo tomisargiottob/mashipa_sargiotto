@@ -23,16 +23,16 @@ body{
  
 
 /* ARTICULOS */
-#seccionArticulos{
+#article-section{
 	margin-top: 20px;
 	margin-bottom: 70px;
 }
 
-#englobaArticulos{
+#article-surround{
 	display:flex;
 	justify-content:space-evenly;
 }
-.articuloDestacado{
+.article-main{
 	width: 33%;
 	display: grid;
 	grid-template-columns: 100%;
@@ -41,7 +41,7 @@ body{
 	align-items: center;
 	justify-items: center;
 }
-.articuloDestacado article{
+.article-main article{
 	
 	text-align: center;
 	width: 80%;
@@ -49,14 +49,14 @@ body{
 	grid-area: texto;
 
 }
-.imagenArticulosDestacados{
+.img-article-main{
 	width:80%;
 	object-fit: contain;
 	grid-area: imagen;
 }
 
 /* NEWSLETTER */
-#secNewsletter{
+#newsletter-section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -150,25 +150,25 @@ form input{
 	padding: 10px;
 	font-size: 1.5vw;
 }
-#ownerUno{
+#owner-one{
 	width: 100%;
 	grid-area: owner1;
 }
-#ownerUno img{
+#owner-one img{
 	width: 100%;
 }
-#descripcionOwnerUno{
+#descripcionowner-one{
 	grid-area: texto1;
 }
 
-#ownerDos{
+#owner-two{
 	width: 100%;
 	grid-area: owner2;
 }
-#ownerDos img{
+#owner-two img{
 	width: 100%;
 }
-#descripcionOwnerUno{
+#descripcionowner-one{
 	grid-area: texto2;
 }
 #colaboradores{
@@ -221,30 +221,30 @@ form input{
 form span{
 	font-size: 1vw;
 }
-#contactForm{
+#contacting-form{
 	width: 50%;
 	margin:0 auto;
 	font-size: 1.5vw;
 	margin-bottom: 50px;
 }
-#contactForm input,
-#contactForm label,
-#contactForm select,
-#contactForm textarea{
+#contacting-form input,
+#contacting-form label,
+#contacting-form select,
+#contacting-form textarea{
 	text-align: center;
 	width: 70%;
 	margin:0 auto;
 	display: block;
 }
-#contactAsunto{
+#contacting-topic{
 	height: 30px;
 	font-size: 1.5vw;
 }
-.obligatorio{
+.obligatory{
 	font-size: 1vw;
 	color: red;
 }
-#contactForm input[type='checkbox'],
+#contacting-form input[type='checkbox'],
 input[type='checkbox'] {
 	display: inline;
 	width:1.5vw;
@@ -252,8 +252,8 @@ input[type='checkbox'] {
 	background-color:white;
 	border-radius:5px;
 }
-#contactForm input[type='reset'],
-#contactForm input[type='submit'],
+#contacting-form input[type='reset'],
+#contacting-form input[type='submit'],
 input[type='submit']{
 	width:20%;
 	margin-top:10px;
@@ -299,7 +299,7 @@ footer{
 
 }
 
-.piePagina{
+.pie-pagina{
 	width: 33%;
 	text-align: center;
 }
@@ -355,11 +355,11 @@ footer div span:hover{
 }
 
 @media only screen and (max-width:500px) {
-	#englobaArticulos{
+	#article-surround{
 		flex-direction: column;
 		justify-content: center;
 	}
-	.articuloDestacado{
+	.article-main{
 		width: 70%;
 		margin: 10px auto 0px auto;
 	}
