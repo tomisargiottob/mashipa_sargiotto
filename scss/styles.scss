@@ -49,11 +49,11 @@ header{
 		}
 		.nav-link{
 			color:black !important;
-			
+			&:hover{
+				color: orange !important;
+			}
 		}
-		.nav-link:hover{
-			color: orange !important;
-		}
+		
 		li{
 			justify-content: flex-end !important;
 			width: 100%;
@@ -101,14 +101,12 @@ p{
 	}
 	p{
 		font-size: $textoGrande;
-		// width:50%;
 		margin: 0 auto;
 	}
 	form{
 		@extend #contactForm ;
 		input[type="submit"]{
 			font-size: $textoGrande;
-			// width: auto;
 		}
 	}
 }
@@ -201,13 +199,12 @@ p{
 		font-size: $textoMedio;
 	}
 	.obligatorio{
-		font-size: 1vw;
+		font-size: $textoChico;
 		color: red;
 	}
 	input[type='checkbox'] {
 		display: inline;
 		width:1rem;
-		height:1ewm;
 		background-color:$backgroundMain;
 		border-radius:5px;
 	}
@@ -222,9 +219,7 @@ p{
 		cursor:pointer;
 	}
 	.aceptarPoliticas{
-		text-align: center;
-		width: auto;
-		margin: 5px auto;
+		@include centrar(center,auto ,5px auto );
 	}
 
 }
@@ -423,9 +418,9 @@ footer{
 	a{
 		text-decoration: none;
 		color: black;
-	}
-	a:hover{
-		color:$colorNaranja;
+		&:hover{
+			color:$colorNaranja;
+		}
 	}
 	color: $colorTexto;
 	.piePagina{
@@ -436,9 +431,9 @@ footer{
 				list-style-type: none;
 				font-size: $textoMedio;
 				margin:10px;
-			}
-			li:hover{
-				color:$colorNaranja;
+				&:hover{
+					color:$colorNaranja;
+				}
 			}
 		}
 	}
@@ -446,7 +441,6 @@ footer{
 		p{
 			text-align: center;
 			font-size: $tituloChico;
-			// margin-bottom: 20px;
 		}
 	}
 }

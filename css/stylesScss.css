@@ -32,8 +32,8 @@ header {
       justify-content: flex-end !important; }
     header nav .nav-link {
       color: black !important; }
-    header nav .nav-link:hover {
-      color: orange !important; }
+      header nav .nav-link:hover {
+        color: orange !important; }
     header nav li {
       justify-content: flex-end !important;
       width: 100%;
@@ -162,12 +162,11 @@ p {
     height: 40px;
     font-size: 1rem; }
   #contactForm .obligatorio, #imagenHome form .obligatorio, #llamadoAccion form .obligatorio, #formularioHome form .obligatorio, #secNewsletter .obligatorio {
-    font-size: 1vw;
+    font-size: 0.75rem;
     color: red; }
   #contactForm input[type='checkbox'], #imagenHome form input[type='checkbox'], #llamadoAccion form input[type='checkbox'], #formularioHome form input[type='checkbox'], #secNewsletter input[type='checkbox'] {
     display: inline;
     width: 1rem;
-    height: 1ewm;
     background-color: #f8f9fa;
     border-radius: 5px; }
   #contactForm input[type='reset'], #imagenHome form input[type='reset'], #llamadoAccion form input[type='reset'], #formularioHome form input[type='reset'], #secNewsletter input[type='reset'],
@@ -185,8 +184,8 @@ p {
     cursor: pointer; }
   #contactForm .aceptarPoliticas, #imagenHome form .aceptarPoliticas, #llamadoAccion form .aceptarPoliticas, #formularioHome form .aceptarPoliticas, #secNewsletter .aceptarPoliticas {
     text-align: center;
-    width: auto;
-    margin: 5px auto; }
+    margin: 5px auto;
+    width: auto; }
 
 /* CONTACTO y Newsletter */
 #infoContacto {
@@ -341,8 +340,8 @@ footer {
   footer a {
     text-decoration: none;
     color: black; }
-  footer a:hover {
-    color: #f5772e; }
+    footer a:hover {
+      color: #f5772e; }
   footer .piePagina {
     text-align: center; }
     footer .piePagina ul {
@@ -351,8 +350,8 @@ footer {
         list-style-type: none;
         font-size: 1rem;
         margin: 10px; }
-      footer .piePagina ul li:hover {
-        color: #f5772e; }
+        footer .piePagina ul li:hover {
+          color: #f5772e; }
   footer div p {
     text-align: center;
     font-size: 2rem; }
