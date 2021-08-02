@@ -50,7 +50,7 @@ body {
 
 h1 {
   padding-top: 20px;
-  font-size: 3rem;
+  font-size: 3em;
   text-align: center;
   text-decoration: underline; }
 
@@ -125,7 +125,8 @@ p {
   #seccionArticulos #englobaArticulos img, #seccionColaboradores #englobaArticulos img {
     width: 100%; }
   #seccionArticulos #englobaArticulos article, #seccionColaboradores #englobaArticulos article {
-    text-align: center; }
+    text-align: center;
+    padding-top: 10px; }
   #seccionArticulos #englobaArticulos .articuloDestacado, #seccionColaboradores #englobaArticulos .articuloDestacado {
     background-color: #f8f9fa;
     border: 1px solid black; }
@@ -135,7 +136,7 @@ p {
   font-size: 1rem;
   margin-bottom: 30px; }
   #contactForm span, #imagenHome form span, #llamadoAccion form span, #formularioHome form span, #secNewsletter span {
-    font-size: 1rem; }
+    font-size: 0.75rem; }
   #contactForm input, #imagenHome form input, #llamadoAccion form input, #formularioHome form input, #secNewsletter input,
   #contactForm label,
   #imagenHome form label,
@@ -193,7 +194,7 @@ p {
   margin: 0 auto;
   width: 80%; }
   #infoContacto i {
-    font-size: 3rem; }
+    font-size: 3em; }
 
 #mapa {
   text-align: center;
@@ -304,6 +305,11 @@ p {
 #seccionColaboradores h3 {
   text-align: center; }
 
+#descripcionPrecios {
+  text-align: center;
+  margin: 20px auto 20px auto;
+  width: 70%; }
+
 #precios {
   text-align: center;
   margin: 0 auto;
@@ -354,27 +360,39 @@ footer {
 .row {
   margin-right: 0px !important; }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1400px) {
   nav li a {
     font-size: 2rem !important; }
   .espacio-blanco {
     height: 2rem !important; } }
 
 @media only screen and (max-width: 1200px) {
+  header {
+    grid-template-columns: 25% 75%;
+    align-items: center; }
+    header .container-fluid {
+      justify-content: flex-end; }
   nav li a {
     font-size: 1.5rem !important; }
   .espacio-blanco {
-    height: 2rem !important; } }
+    height: 2rem !important; }
+  #precios {
+    width: 70%; } }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   header {
-    grid-template-columns: 30% 70%; }
+    grid-template-columns: 30% 70%;
+    align-items: center; }
     header .container-fluid {
       justify-content: flex-end; }
   .hide-mobile {
-    display: none; } }
+    display: none; }
+  #precios {
+    width: 80%; }
+  #descripcionPrecios {
+    width: 80%; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   header {
     grid-template-columns: 40% 60%;
     align-items: center; }
@@ -384,4 +402,25 @@ footer {
     width: 70%; }
   #design {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  #precios {
+    width: 90%; }
+  #descripcionPrecios {
+    width: 90%; } }
+
+@media only screen and (max-width: 420px) {
+  header {
+    grid-template-columns: 40% 60%;
+    align-items: center; }
+  .hide-mobile {
+    display: none; }
+  .articuloDestacado {
+    width: 70%; }
+  #design {
+    width: 80%;
+    margin: 0 auto; }
+  #precios {
+    width: 90%;
+    font-size: 0.75rem; }
+  #descripcionPrecios {
+    width: 90%; } }
