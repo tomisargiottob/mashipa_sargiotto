@@ -44,6 +44,12 @@ header {
         font-size: 2.5rem;
         font-family: 'Inika', serif;
         color: #f8f9fa; }
+      header nav li ul {
+        width: 30%;
+        margin: 0 auto; }
+        header nav li ul li {
+          padding-right: 0px;
+          text-align: center; }
 
 body {
   background-color: #faecd2; }
@@ -78,8 +84,21 @@ p {
     font-size: 1.5rem;
     margin: 0 auto; }
   #imagen-home button {
+    margin: 10px auto;
+    background-color: #39DBC0;
+    color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
     font-size: 1.5rem;
     padding: 5px 10px 5px 10px; }
+    #imagen-home button:hover {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in;
+      position: relative;
+      top: -5px;
+      cursor: pointer; }
 
 #stadistic-section {
   text-align: center;
@@ -107,11 +126,23 @@ p {
     margin: 0 auto;
     width: auto; }
   #call-to-action button {
+    margin: 10px auto;
+    background-color: #39DBC0;
+    color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     font-size: 1.5rem;
-    width: auto !important;
     padding: 0px 5px 0px 5px; }
+    #call-to-action button:hover {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in;
+      position: relative;
+      top: -5px;
+      cursor: pointer; }
   #call-to-action #form-steps {
     text-align: center; }
     #call-to-action #form-steps div .enumeracion {
@@ -138,26 +169,20 @@ p {
       top: -10px;
       cursor: pointer; }
 
-#contacting-form, #imagen-home, #call-to-action, #home-form form, #newsletter-section {
+#contacting-form, #home-form form, #newsletter-section {
   margin: 0 auto;
   font-size: 1rem;
   margin-bottom: 30px; }
-  #contacting-form span, #imagen-home span, #call-to-action span, #home-form form span, #newsletter-section span {
+  #contacting-form span, #home-form form span, #newsletter-section span {
     font-size: 0.75rem; }
-  #contacting-form input, #imagen-home input, #call-to-action input, #home-form form input, #newsletter-section input,
+  #contacting-form input, #home-form form input, #newsletter-section input,
   #contacting-form label,
-  #imagen-home label,
-  #call-to-action label,
   #home-form form label,
   #newsletter-section label,
   #contacting-form select,
-  #imagen-home select,
-  #call-to-action select,
   #home-form form select,
   #newsletter-section select,
   #contacting-form textarea,
-  #imagen-home textarea,
-  #call-to-action textarea,
   #home-form form textarea,
   #newsletter-section textarea {
     text-align: center;
@@ -165,43 +190,37 @@ p {
     width: 70%;
     display: block;
     padding-left: 5px; }
-  #contacting-form #contacting-topic, #imagen-home #contacting-topic, #call-to-action #contacting-topic, #home-form form #contacting-topic, #newsletter-section #contacting-topic {
+  #contacting-form #contacting-topic, #home-form form #contacting-topic, #newsletter-section #contacting-topic {
     height: 40px;
     font-size: 1rem; }
-  #contacting-form .obligatory, #imagen-home .obligatory, #call-to-action .obligatory, #home-form form .obligatory, #newsletter-section .obligatory {
+  #contacting-form .obligatory, #home-form form .obligatory, #newsletter-section .obligatory {
     font-size: 0.75rem;
     color: red; }
-  #contacting-form input[type='checkbox'], #imagen-home input[type='checkbox'], #call-to-action input[type='checkbox'], #home-form form input[type='checkbox'], #newsletter-section input[type='checkbox'] {
+  #contacting-form input[type='checkbox'], #home-form form input[type='checkbox'], #newsletter-section input[type='checkbox'] {
     display: inline;
     width: 1rem;
     background-color: #f8f9fa;
     border-radius: 5px; }
-  #contacting-form input[type='reset'], #imagen-home input[type='reset'], #call-to-action input[type='reset'], #home-form form input[type='reset'], #newsletter-section input[type='reset'],
+  #contacting-form input[type='reset'], #home-form form input[type='reset'], #newsletter-section input[type='reset'],
   #contacting-form button,
-  #imagen-home button,
-  #call-to-action button,
   #home-form form button,
   #newsletter-section button,
   #contacting-form input[type='submit'],
-  #imagen-home input[type='submit'],
-  #call-to-action input[type='submit'],
   #home-form form input[type='submit'],
   #newsletter-section input[type='submit'] {
     margin: 10px auto;
     background-color: #39DBC0;
     color: white;
     border: black 1px solid;
-    border-radius: 10px;
-    cursor: pointer; }
-    #contacting-form input[type='reset']:hover, #imagen-home input[type='reset']:hover, #call-to-action input[type='reset']:hover, #home-form form input[type='reset']:hover, #newsletter-section input[type='reset']:hover,
+    border-radius: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+    width: auto; }
+    #contacting-form input[type='reset']:hover, #home-form form input[type='reset']:hover, #newsletter-section input[type='reset']:hover,
     #contacting-form button:hover,
-    #imagen-home button:hover,
-    #call-to-action button:hover,
     #home-form form button:hover,
     #newsletter-section button:hover,
     #contacting-form input[type='submit']:hover,
-    #imagen-home input[type='submit']:hover,
-    #call-to-action input[type='submit']:hover,
     #home-form form input[type='submit']:hover,
     #newsletter-section input[type='submit']:hover {
       box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
@@ -209,7 +228,7 @@ p {
       position: relative;
       top: -5px;
       cursor: pointer; }
-  #contacting-form .aceptar-politicas, #imagen-home .aceptar-politicas, #call-to-action .aceptar-politicas, #home-form form .aceptar-politicas, #newsletter-section .aceptar-politicas {
+  #contacting-form .aceptar-politicas, #home-form form .aceptar-politicas, #newsletter-section .aceptar-politicas {
     text-align: center;
     margin: 5px auto;
     width: auto; }
@@ -280,12 +299,14 @@ p {
 
 .galeriaPrincipal button, .cargarMas button {
   margin: 10px auto;
-  width: auto;
   background-color: #39DBC0;
-  font-size: 1.5rem;
   color: white;
+  border: black 1px solid;
   border-radius: 5px;
-  cursor: pointer; }
+  padding: 0px 5px;
+  cursor: pointer;
+  width: auto;
+  font-size: 1.5rem; }
   .galeriaPrincipal button:hover, .cargarMas button:hover {
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.2s ease-in;
@@ -300,7 +321,7 @@ p {
 .cargarMas button {
   display: block;
   margin: 20 auto;
-  padding: 5px; }
+  padding: 0px 5px 0px 5px; }
 
 #design {
   margin-bottom: 4rem; }

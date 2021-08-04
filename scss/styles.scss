@@ -13,6 +13,19 @@
 	cursor:pointer;
 }
 
+@mixin buttonFormat(){
+	margin: 10px auto;
+	background-color: $colorVerde;
+	color:white;
+	border:black 1px solid;
+	border-radius: 5px;
+	padding: 0px 5px;
+	cursor:pointer;
+	&:hover{
+		@include hoverPosition(-5px, 0px 10px 10px)
+	}
+}
+
 *{
 	margin:0px;
 	padding: 0px;
@@ -73,6 +86,14 @@ header{
 				font-family: 'Inika', serif;
 				color: $backgroundMain;
 			}
+			ul{
+				width: 30%;
+				margin: 0 auto;
+				li{
+					padding-right: 0px;
+					text-align: center;
+				}
+			}
 		}
 	}
 }
@@ -110,8 +131,9 @@ p{
 		font-size: $textoGrande;
 		margin: 0 auto;
 	}
-	@extend #contacting-form ;
+
 	button{
+		@include buttonFormat() ;
 		font-size: $textoGrande;
 		padding: 5px 10px 5px 10px ;
 	}
@@ -143,13 +165,12 @@ p{
 	h3{
 		font-size: $tituloChico;
 		@include centrar(center,auto ,0 auto )
-	}
-	@extend #contacting-form ;
+	};
 	button{
+		@include buttonFormat();
 		display: block;
 		margin:0 auto;
 		font-size: $textoGrande;
-		width: auto !important;
 		padding: 0px 5px 0px 5px;
 	}
 	#form-steps{
@@ -221,15 +242,8 @@ p{
 	input[type='reset'],
 	button,
 	input[type='submit']{
-		margin: 10px auto;
-		background-color: $colorVerde;
-		color:white;
-		border:black 1px solid;
-		border-radius: 10px;
-		cursor:pointer;
-		&:hover{
-			@include hoverPosition(-5px, 0px 10px 10px)
-		}
+		@include buttonFormat();
+		width: auto;
 	}
 	.aceptar-politicas{
 		@include centrar(center,auto ,5px auto );
@@ -314,16 +328,9 @@ p{
 		}
 	}
 	button{
-		margin: 10px auto;
+		@include buttonFormat();
 		width:auto;
-		background-color: $colorVerde;
 		font-size: $textoGrande;
-		color:white;
-		border-radius: 5px;
-		cursor:pointer;
-		&:hover{
-			@include hoverPosition(-5px, 0px 10px 10px)
-		}
 	}
 	h2{
 		text-align: left;
@@ -335,7 +342,7 @@ p{
 	button{
 		display: block;
 		margin: 20 auto;
-		padding: 5px;
+		padding: 0px 5px 0px 5px;
 	}
 }
 // Diseños
