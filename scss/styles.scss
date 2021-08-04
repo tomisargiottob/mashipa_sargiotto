@@ -222,6 +222,7 @@ p{
 	select,
 	textarea{
 		@include centrar(center,70% ,0 auto );
+		margin-top: 5px;
 		display: block;
 		padding-left: 5px;
 	}
@@ -284,7 +285,7 @@ p{
 	form{
 		@extend #contacting-form ;
 		margin-top: 10px;
-		width:75%;
+		width:50%;
 		input[type='submit'],
 		.send-form{
 			width: auto;
@@ -514,6 +515,11 @@ footer{
 	#precios{
 		width:70%;
 	}
+	#home-form{
+		form{
+			width:50%;
+		}
+	}
 }
 @media only screen and (max-width:768px) {
 	header{
@@ -531,6 +537,11 @@ footer{
 	}
 	#descripcionPrecios{
 		width:80%;
+	}
+	#home-form{
+		form{
+			width:60%;
+		}
 	}
 }
 
@@ -555,6 +566,11 @@ footer{
 	#descripcionPrecios{
 		width:90%;
 	}
+	#home-form{
+		form{
+			width:70%;
+		}
+	}
 }
 
 @media only screen and (max-width:420px) {
@@ -578,6 +594,11 @@ footer{
 	}
 	#descripcionPrecios{
 		width:90%;
+	}
+	#home-form{
+		form{
+			width:80%;
+		}
 	}
 }
 
