@@ -5,6 +5,14 @@
 	width: $ancho;
 }
 
+@mixin hoverPosition($position:-10px, $boxshadow:0px 15px 26px){
+	box-shadow: $boxshadow rgba(0, 0, 0, 0.50);
+	transition: all 0.2s ease-in;
+	position: relative; 
+	top: $position;
+	cursor:pointer;
+}
+
 *{
 	margin:0px;
 	padding: 0px;
@@ -76,7 +84,6 @@ h1{
 	padding-top: 20px;
 	font-size: $tituloMedio;
 	text-align: center;
-	text-decoration: underline;
 }
 h2{
 	text-align: center;
@@ -103,11 +110,10 @@ p{
 		font-size: $textoGrande;
 		margin: 0 auto;
 	}
-	form{
-		@extend #contacting-form ;
-		input[type="submit"]{
-			font-size: $textoGrande;
-		}
+	@extend #contacting-form ;
+	button{
+		font-size: $textoGrande;
+		padding: 5px 10px 5px 10px ;
 	}
 }
 #stadistic-section{
@@ -138,14 +144,13 @@ p{
 		font-size: $tituloChico;
 		@include centrar(center,auto ,0 auto )
 	}
-	form{
+	@extend #contacting-form ;
+	button{
+		display: block;
 		margin:0 auto;
-		@extend #contacting-form ;
-		input[type="submit"]{
-			font-size: $textoGrande;
-			width: auto !important;
-			padding: 0px 5px 0px 5px;
-		}
+		font-size: $textoGrande;
+		width: auto !important;
+		padding: 0px 5px 0px 5px;
 	}
 	#form-steps{
 		text-align: center;
@@ -174,7 +179,12 @@ p{
 		.article-main{
 			background-color: $backgroundMain;
 			border:1px solid black;
+			border-radius: 5px;
+			&:hover{
+				@include hoverPosition()
+			}
 		}
+		
 	}
 }
 
@@ -209,14 +219,17 @@ p{
 		border-radius:5px;
 	}
 	input[type='reset'],
+	button,
 	input[type='submit']{
 		margin: 10px auto;
-		width:20%;
 		background-color: $colorVerde;
 		color:white;
 		border:black 1px solid;
 		border-radius: 10px;
 		cursor:pointer;
+		&:hover{
+			@include hoverPosition(-5px, 0px 10px 10px)
+		}
 	}
 	.aceptar-politicas{
 		@include centrar(center,auto ,5px auto );
@@ -228,7 +241,7 @@ p{
 	@include centrar(left,80% ,0 auto );
 	i{
 		font-size: $tituloMedio;
-	}	
+	}
 }	
 #mapa{
 	@include centrar(center,80% ,0 auto );
@@ -285,12 +298,20 @@ p{
 		#newsletterEmail:focus{
 			width: 60%;
 		}
+		input[type='submit']{
+			width:20%;
+			padding:5px 10px 5px 10px;
+		}
 	}
 }
 .galeriaPrincipal{
 	img{
 		width: 100%;
 		margin-bottom: 10px;
+		border-radius: 5px;
+		&:hover{
+			@include hoverPosition()
+		}
 	}
 	button{
 		margin: 10px auto;
@@ -298,8 +319,11 @@ p{
 		background-color: $colorVerde;
 		font-size: $textoGrande;
 		color:white;
-		border-radius: 10px;
+		border-radius: 5px;
 		cursor:pointer;
+		&:hover{
+			@include hoverPosition(-5px, 0px 10px 10px)
+		}
 	}
 	h2{
 		text-align: left;
@@ -320,6 +344,9 @@ p{
 		.diseno{
 			padding: 0px;
 			border: 1px solid gray;
+			&:hover{
+				@include hoverPosition(-5px, 0px 10px 10px);
+			}
 			div img{
 					width:100%;
 	
