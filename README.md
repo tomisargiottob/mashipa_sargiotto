@@ -1,10 +1,10 @@
-#MASHIPA egresados
+# MASHIPA egresados
 
-##DESCRIPCION
+## DESCRIPCION
 Esta página web fué diseñada para la empresa Mashipa Egresados la cual se dedica a la diseño confección y venta de conjuntos de egresados. El diseño es de creación propia pero las imagenes utilizadas pertenecen a la empresa
 
 
-##CARACTERISTICAS
+## CARACTERISTICAS
 SEO
 
 Los titulos se cambiaron respecto al orden de importancia, si bien se habia planteado desde un principio así, se agregó terminos claves.
